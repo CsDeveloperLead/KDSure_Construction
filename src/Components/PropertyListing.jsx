@@ -87,7 +87,7 @@ const PropertyListing = () => {
           filteredProperties.map((property) => (
             <div
               key={property.id}
-              className="bg-white rounded-2xl shadow-lg  w-[280px] h-[465px]"
+              className="bg-white rounded-2xl shadow-lg  w-[280px] h-[475px]"
             >
               <div className="relative">
                 <img
@@ -211,8 +211,8 @@ const PropertyListing = () => {
                 </div>
 
                 {/* Price */}
-                <p className="text-[#c17818] text-lg font-bold mt-3">
-                  {property.price}
+                <p className="bg-[#c17818] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                  Get Quote
                 </p>
               </div>
             </div>

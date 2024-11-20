@@ -43,13 +43,13 @@ const propertyData = [
   {
     title: "ACE HANEI",
     location: "Sector 12, Greater Noida West",
-    price: "₹24,xx,xxx",
+    
     img: img1,
   },
   {
     title: "MAHAGUN 2.0",
     location: "Sector 12, Greater Noida West",
-    price: "₹24,xx,xxx",
+    
     img: img2,
   },
 

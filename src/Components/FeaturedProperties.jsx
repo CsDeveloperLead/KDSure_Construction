@@ -22,7 +22,7 @@ const FeaturedProperties = () => {
           {propertyData.slice(0, 4).map((property, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg  w-[280px] h-[465px]"
+              className="bg-white rounded-2xl shadow-lg  w-[280px] h-[475px]"
             >
               <div className="relative">
                 <img
@@ -146,8 +146,8 @@ const FeaturedProperties = () => {
                 </div>
 
                 {/* Price */}
-                <p className="text-[#c17818] text-lg font-bold mt-3 mb-4">
-                  {property.price}
+                <p className="bg-[#c17818] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                  Get Quote
                 </p>
               </div>
             </div>

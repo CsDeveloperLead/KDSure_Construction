@@ -29,7 +29,12 @@ const PropertyGrid = () => {
         {propertyData.slice(0, 6).map((property) => (
           <div
             key={property.id}
-            className="bg-[#d9d9d9] rounded-3xl p-8 h-[450px] border flex flex-col justify-end  border-blue-200 relative"
+            className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end  border-blue-200 relative"
+            style={{
+              backgroundImage: `url(${property.img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
             {/* Price Tag */}
             <div className="absolute top-8 left-8 bg-[#f2f2f2]  text-gray-900 font-semibold text-sm px-6 py-2 rounded-full">
@@ -56,7 +61,12 @@ const PropertyGrid = () => {
         {propertyData.slice(0, 3).map((property) => (
           <div
             key={property.id}
-            className="bg-[#d9d9d9] rounded-3xl p-8 h-[450px] border flex flex-col justify-end  border-blue-200 relative"
+            className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end  border-blue-200 relative"
+            style={{
+              backgroundImage: `url(${property.img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
             {/* Price Tag */}
             <div className="absolute top-8 left-8 bg-[#f2f2f2]  text-gray-900 font-semibold text-sm px-6 py-2 rounded-full">
