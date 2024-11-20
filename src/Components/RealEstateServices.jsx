@@ -1,17 +1,17 @@
 const RealEstateServices = () => {
   return (
     <div className="flex flex-col items-start gap-8 font-satoshi my-20">
-      <div className="flex justify-between items-center">
-        <h1 className="text-4xl md:text-7xl font-semibold leading-[80px] ">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center text-center md:text-start">
+        <h1 className="text-3xl md:text-7xl font-semibold md:leading-[80px] ">
           Real Estate <span className="text-[#c17818]">Services</span> Tailored for You
         </h1>
-        <p className="text-gray-500 text-xl mt-4">
+        <p className="text-gray-500 text-base md:text-xl mt-2 md:mt-4">
           Whether you&apos;re buying, selling, or renting, we’re here to
           simplify the journey
         </p>
       </div>
-      <div className="w-full flex items-center gap-10 mt-10">
-        <div className="w-1/2">
+      <div className="w-full flex flex-col md:flex-row items-center gap-10 mt-10">
+        <div className="w-full md:w-1/2">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Service Card 1 */}
             <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border border-[#2577F2] flex flex-col items-start">
@@ -109,7 +109,7 @@ const RealEstateServices = () => {
             </div>
           </div>
         </div>
-        <div className=" w-1/2 h-64 lg:h-[400px] bg-gray-200 rounded-lg"></div>
+        <div className=" w-full md:w-1/2 h-64 lg:h-[400px] bg-gray-200 rounded-lg"></div>
       </div>
 
       {/* Placeholder for the image or content */}

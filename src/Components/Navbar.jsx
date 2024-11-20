@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link,NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -13,11 +13,13 @@ const Navbar = () => {
     <nav className="flex items-center justify-between p-4  px-10">
       <div className="flex items-center space-x-2">
         {/* Logo */}
+        <Link to="/">
         <img
           src="logo.png"
           alt="KDSure Logo"
           className="h-12"
         />
+        </Link>
         {/* <span className="font-bold text-xl text-gray-700">KDSure</span>
         <span className="text-sm text-gray-600">Infratech Pvt. Ltd.</span> */}
       </div>

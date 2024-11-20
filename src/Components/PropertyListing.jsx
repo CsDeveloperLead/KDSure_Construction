@@ -1,8 +1,7 @@
-import  { useState } from "react";
+import { useState } from "react";
 import propertyData from "../propertyData";
 const PropertyListing = () => {
   // Property data
-  
 
   // State for search and filter
   const [searchQuery, setSearchQuery] = useState("");
@@ -11,8 +10,8 @@ const PropertyListing = () => {
   // Filtered properties based on search and category
   const filteredProperties = propertyData.filter((property) => {
     const matchesSearch =
-      property.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      property.location.toLowerCase().includes(searchQuery.toLowerCase());
+      property.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      property.location?.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory =
       filterCategory === "All" || property.title === filterCategory;
 
@@ -20,84 +19,203 @@ const PropertyListing = () => {
   });
 
   return (
-    <div className="p-6">
+    <div className="py-20">
       {/* Search and Filters */}
-      <div className="flex items-center gap-4 mb-6">
-        {/* Search Bar */}
-        <div className="relative">
-          <input
-            type="text"
-            placeholder="Search by type or location"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
-          />
-          {/* <span className="absolute inset-y-0 right-4 flex items-center text-gray-500">
-            🔍
-          </span> */}
+      <div className="flex flex-col md:flex-row  items-center md:justify-between">
+        <div className="flex  items-center gap-4 mb-6">
+          {/* Search Bar */}
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search by type or location"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-[350px] md:w-[450px] px-3 py-2 pl-14 bg-[#f0f0f1] rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
+            />
+            <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
+              <svg
+                width="27"
+                height="24"
+                viewBox="0 0 27 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.36167 23.9071V13.8144H0.478027V10.9308H9.12895V13.8144H6.24531V23.9071H3.36167ZM3.36167 8.04712V0.838013H6.24531V8.04712H3.36167ZM9.12895 8.04712V5.16347H12.0126V0.838013H14.8962V5.16347H17.7799V8.04712H9.12895ZM12.0126 23.9071V10.9308H14.8962V23.9071H12.0126ZM20.6635 23.9071V19.5817H17.7799V16.698H26.4308V19.5817H23.5472V23.9071H20.6635ZM20.6635 13.8144V0.838013H23.5472V13.8144H20.6635Z"
+                  fill="#B6B6B7"
+                />
+              </svg>
+            </div>
+            <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 29 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.7929 28.286L16.6373 19.1304C15.9164 19.6831 15.0333 20.1217 13.988 20.4461C12.9427 20.7705 11.8793 20.9327 10.798 20.9327C7.93835 20.9327 5.51729 19.9415 3.53479 17.959C1.55229 15.9765 0.561035 13.5554 0.561035 10.6958C0.561035 7.83618 1.55229 5.41512 3.53479 3.43262C5.51729 1.45011 7.93835 0.458862 10.798 0.458862C13.6576 0.458862 16.0786 1.45011 18.0611 3.43262C20.0436 5.41512 21.0349 7.83618 21.0349 10.6958C21.0349 11.7772 20.8847 12.8105 20.5843 13.7957C20.2839 14.7809 19.8454 15.6581 19.2687 16.427L28.4603 25.6186L25.7929 28.286ZM10.798 17.1119C12.6002 17.1119 14.1202 16.4931 15.3577 15.2555C16.5953 14.018 17.2141 12.4981 17.2141 10.6958C17.2141 8.89351 16.5953 7.37359 15.3577 6.13603C14.1202 4.89847 12.6002 4.27969 10.798 4.27969C8.99568 4.27969 7.47577 4.89847 6.2382 6.13603C5.00064 7.37359 4.38186 8.89351 4.38186 10.6958C4.38186 12.4981 5.00064 14.018 6.2382 15.2555C7.47577 16.4931 8.99568 17.1119 10.798 17.1119Z"
+                  fill="#B6B6B7"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
-        {/* <button className="p-3 rounded-lg border border-gray-300">
-          <span className="text-gray-500">Filter</span>
-        </button> */}
+        <div className="flex gap-4 mb-6">
+          {["All", "House", "Villa", "Apartment"].map((type, index) => (
+            <button
+              key={index}
+              onClick={() => setFilterCategory(type)}
+              className={`px-4 md:px-10 py-1 border border-gray-300 rounded-xl ${
+                filterCategory === type
+                  ? "bg-[#c17818] text-sm md:text-base text-white"
+                  : "bg-gray-100 text-sm md:text-base text-gray-600"
+              }`}
+            >
+              {type}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Property Type Filters */}
-      <div className="flex gap-4 mb-6">
-        {["All", "House", "Villa"].map((type, index) => (
-          <button
-            key={index}
-            onClick={() => setFilterCategory(type)}
-            className={`px-4 py-2 rounded-full ${
-              filterCategory === type
-                ? "bg-orange-500 text-white"
-                : "bg-gray-100 text-gray-600"
-            }`}
-          >
-            {type}
-          </button>
-        ))}
-      </div>
 
       {/* Property Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 px-8 md:px-0 gap-8 md:gap-24">
         {filteredProperties.length > 0 ? (
           filteredProperties.map((property) => (
             <div
-            key={property.id}
-            className="bg-white rounded-2xl shadow-lg  w-[280px] h-[450px]"
-          >
-            <div className="relative">
-              <img
-                src=""
-                alt=""
-                className="w-full  object-cover rounded-2xl  h-[300px] bg-gray-300"
-              />
-              <span className="absolute bottom-2 right-2 bg-white text-gray-600 text-sm rounded-full px-2 py-1">
-                {property.extraImages}
-              </span>
-            </div>
-
-            <div className=""></div>
-
-            {/* Property Details */}
-            <div className="p-4">
-              <h3 className="text-lg font-semibold">{property.title}</h3>
-              <p className="text-gray-500">{property.location}</p>
-
-              {/* Property Info */}
-              <div className="flex items-center space-x-2 text-gray-500 text-sm mt-2">
-                <span>🛏 {property.rooms}</span>
-                <span>🛁 {property.baths}</span>
-                <span>📐 {property.area}</span>
-                <span>{property.label}</span>
+              key={property.id}
+              className="bg-white rounded-2xl shadow-lg  w-[280px] h-[465px]"
+            >
+              <div className="relative">
+                <img
+                  src={property.img}
+                  alt=""
+                  className="w-full  object-cover rounded-2xl  h-[300px] bg-gray-300"
+                />
+                <span className="absolute bottom-2 right-2 bg-white text-gray-600 text-sm rounded-full px-2 py-1">
+                  {property.extraImages}
+                </span>
               </div>
 
-              {/* Price */}
-              <p className="text-blue-500 text-lg font-bold mt-3">
-                {property.price}
-              </p>
+              <div className=""></div>
+
+              {/* Property Details */}
+              <div className="p-4">
+                <h3 className="text-lg font-semibold">{property.title}</h3>
+                <p className="text-gray-500">{property.location}</p>
+
+                {/* Property Info */}
+                <div className="flex items-center space-x-2 text-gray-500 text-sm mt-2 border-t border-gray-400 border-b py-1">
+                  <span className="flex gap-2 items-center">
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.93386 14.0005H15.448V15.2667C15.448 15.4082 15.492 15.5262 15.5799 15.6207C15.6678 15.7145 15.7781 15.7614 15.9107 15.7614C16.0432 15.7614 16.1539 15.7145 16.2425 15.6207C16.3304 15.5269 16.3744 15.4089 16.3744 15.2667V11.9348C16.3744 11.6445 16.3046 11.3412 16.165 11.0248C16.0255 10.7092 15.8336 10.4568 15.5893 10.2677V8.37398C15.5893 7.86034 15.4278 7.43119 15.1047 7.08654C14.7823 6.74262 14.38 6.57067 13.8978 6.57067H10.858C10.5859 6.57067 10.3525 6.62352 10.1578 6.72923C9.96308 6.83493 9.80747 6.97972 9.69093 7.16358C9.57439 6.97972 9.41878 6.83493 9.22408 6.72923C9.02939 6.62352 8.79562 6.57067 8.52277 6.57067H5.48513C5.00362 6.57067 4.60133 6.74262 4.27823 7.08654C3.95514 7.43119 3.79359 7.86034 3.79359 8.37398V10.2677C3.54935 10.4568 3.35745 10.7092 3.21789 11.0248C3.07832 11.3404 3.00854 11.6438 3.00854 11.9348V15.2667C3.00854 15.4082 3.0525 15.5262 3.14043 15.6207C3.22835 15.7145 3.33896 15.7614 3.47224 15.7614C3.60483 15.7614 3.71509 15.7145 3.80301 15.6207C3.89094 15.5269 3.9349 15.4089 3.9349 15.2667L3.93386 14.0005ZM3.93386 13.0123V11.8957C3.93386 11.5794 4.03434 11.3144 4.23532 11.1007C4.43629 10.8871 4.68472 10.7799 4.9806 10.7791H14.4013C14.6978 10.7791 14.9466 10.8863 15.1476 11.1007C15.3486 11.3151 15.4487 11.5801 15.448 11.8957V13.0123H3.93386ZM4.71891 9.79094V8.24557C4.71891 8.04458 4.77927 7.8797 4.9 7.75091C5.02072 7.62213 5.17494 7.55774 5.36266 7.55774H8.58348C8.77189 7.55774 8.92646 7.62213 9.04718 7.75091C9.16791 7.88044 9.22827 8.04532 9.22827 8.24557V9.79094H4.71891ZM10.1536 9.79094V8.24557C10.1536 8.04458 10.2139 7.8797 10.3347 7.75091C10.4554 7.62213 10.61 7.55774 10.7984 7.55774H14.0192C14.2069 7.55774 14.3611 7.62213 14.4819 7.75091C14.6026 7.8797 14.6629 8.04458 14.6629 8.24557V9.79094H10.1536ZM1.96075 20.8285C1.47925 20.8285 1.0773 20.6566 0.754905 20.3127C0.431811 19.968 0.270264 19.5389 0.270264 19.0252V2.53304C0.270264 2.01941 0.431811 1.59063 0.754905 1.24672C1.0773 0.902065 1.47925 0.729736 1.96075 0.729736H17.4211C17.9026 0.729736 18.3046 0.902065 18.627 1.24672C18.95 1.59063 19.1116 2.01941 19.1116 2.53304V19.0252C19.1116 19.5389 18.9504 19.9676 18.628 20.3115C18.3049 20.6562 17.9026 20.8285 17.4211 20.8285H1.96075ZM1.96075 19.7119H17.4211C17.5816 19.7119 17.7292 19.6405 17.8639 19.4975C17.9979 19.3539 18.0649 19.1964 18.0649 19.0252V2.53304C18.0649 2.36183 17.9979 2.20439 17.8639 2.06072C17.7292 1.9178 17.5816 1.84634 17.4211 1.84634H1.96075C1.80025 1.84634 1.65266 1.9178 1.51798 2.06072C1.384 2.20439 1.317 2.36183 1.317 2.53304V19.0252C1.317 19.1964 1.384 19.3539 1.51798 19.4975C1.65266 19.6405 1.80025 19.7119 1.96075 19.7119Z"
+                        fill="#404040"
+                      />
+                    </svg>{" "}
+                    {property.rooms}
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.97082 17.2219C7.19971 17.2219 7.39091 17.1393 7.54443 16.974C7.69796 16.8088 7.77472 16.6041 7.77472 16.3599C7.77472 16.1157 7.69761 15.9121 7.54339 15.7491C7.38847 15.5853 7.19657 15.5035 6.96768 15.5035C6.73879 15.5035 6.54794 15.5857 6.39511 15.7502C6.24159 15.9155 6.16483 16.1202 6.16483 16.3644C6.16483 16.6085 6.24194 16.8121 6.39616 16.9751C6.55108 17.1389 6.74298 17.2208 6.97187 17.2208M10.1121 17.2208C10.3403 17.2208 10.5311 17.1385 10.6847 16.974C10.8382 16.8088 10.9149 16.6041 10.9149 16.3599C10.9149 16.1157 10.8378 15.9121 10.6836 15.7491C10.5287 15.5853 10.3368 15.5035 10.1079 15.5035C9.87901 15.5035 9.68816 15.5857 9.53534 15.7502C9.38181 15.9155 9.30505 16.1202 9.30505 16.3644C9.30505 16.6085 9.38216 16.8121 9.53638 16.9751C9.6913 17.1389 9.8832 17.2208 10.1121 17.2208ZM13.2523 17.2208C13.4805 17.2208 13.6714 17.1385 13.8249 16.974C13.9784 16.8088 14.0552 16.6041 14.0552 16.3599C14.0552 16.1157 13.9781 15.9121 13.8238 15.7491C13.6689 15.5853 13.477 15.5035 13.2481 15.5035C13.0192 15.5035 12.8284 15.5857 12.6756 15.7502C12.522 15.9155 12.4453 16.1202 12.4453 16.3644C12.4453 16.6085 12.5224 16.8121 12.6766 16.9751C12.8315 17.1389 13.0234 17.2208 13.2523 17.2208ZM6.97187 13.871C7.20006 13.871 7.39091 13.7887 7.54443 13.6242C7.69796 13.459 7.77472 13.2543 7.77472 13.0101C7.77472 12.7659 7.69761 12.5623 7.54339 12.3993C7.38847 12.2356 7.19657 12.1537 6.96768 12.1537C6.73879 12.1537 6.54794 12.2359 6.39511 12.4004C6.24159 12.5657 6.16483 12.7704 6.16483 13.0146C6.16483 13.2587 6.24194 13.4623 6.39616 13.6253C6.55108 13.7891 6.74298 13.871 6.97187 13.871ZM10.1121 13.871C10.3403 13.871 10.5311 13.7887 10.6847 13.6242C10.8382 13.459 10.9149 13.2543 10.9149 13.0101C10.9149 12.7659 10.8378 12.5623 10.6836 12.3993C10.5287 12.2356 10.3368 12.1537 10.1079 12.1537C9.87901 12.1537 9.68816 12.2359 9.53534 12.4004C9.38181 12.5657 9.30505 12.7704 9.30505 13.0146C9.30505 13.2587 9.38216 13.4623 9.53638 13.6253C9.6913 13.7891 9.8832 13.871 10.1121 13.871ZM13.2523 13.871C13.4805 13.871 13.6714 13.7887 13.8249 13.6242C13.9784 13.459 14.0552 13.2543 14.0552 13.0101C14.0552 12.7659 13.9781 12.5623 13.8238 12.3993C13.6689 12.2356 13.477 12.1537 13.2481 12.1537C13.0192 12.1537 12.8284 12.2359 12.6756 12.4004C12.522 12.5657 12.4453 12.7704 12.4453 13.0146C12.4453 13.2587 12.5224 13.4623 12.6766 13.6253C12.8315 13.7891 13.0234 13.871 13.2523 13.871ZM5.52004 10.0924H14.7V9.66253C14.7 8.31815 14.2499 7.16619 13.3497 6.20666C12.4495 5.24638 11.3696 4.76624 10.11 4.76624C8.84972 4.76624 7.76983 5.24638 6.87033 6.20666C5.97014 7.16693 5.52004 8.31889 5.52004 9.66253V10.0924ZM6.49874 9.10423C6.63831 8.15512 7.04409 7.35973 7.7161 6.71806C8.38811 6.07639 9.18607 5.75518 10.11 5.75443C11.0346 5.75443 11.8329 6.07564 12.5049 6.71806C13.1769 7.36048 13.5824 8.15587 13.7213 9.10423H6.49874ZM2.37982 20.8285C1.89832 20.8285 1.49637 20.6566 1.17397 20.3127C0.850878 19.968 0.689331 19.5389 0.689331 19.0252V2.53304C0.689331 2.01941 0.850878 1.59063 1.17397 1.24672C1.49637 0.902065 1.89832 0.729736 2.37982 0.729736H17.8402C18.3217 0.729736 18.7236 0.902065 19.046 1.24672C19.3691 1.59063 19.5307 2.01941 19.5307 2.53304V19.0252C19.5307 19.5389 19.3695 19.9676 19.0471 20.3115C18.724 20.6562 18.3217 20.8285 17.8402 20.8285H2.37982ZM2.37982 19.7119H17.8402C18.0007 19.7119 18.1483 19.6405 18.2829 19.4975C18.4169 19.3539 18.4839 19.1964 18.4839 19.0252V2.53304C18.4839 2.36183 18.4169 2.20439 18.2829 2.06072C18.1483 1.9178 18.0007 1.84634 17.8402 1.84634H2.37982C2.21932 1.84634 2.07173 1.9178 1.93705 2.06072C1.80306 2.20439 1.73607 2.36183 1.73607 2.53304V19.0252C1.73607 19.1964 1.80306 19.3539 1.93705 19.4975C2.07173 19.6405 2.21932 19.7119 2.37982 19.7119Z"
+                        fill="#404040"
+                      />
+                    </svg>
+                    {property.baths}
+                  </span>
+                  <span className="flex gap-2 items-center">
+                    <svg
+                      width="27"
+                      height="28"
+                      viewBox="0 0 27 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="7.78982"
+                        y="7.62014"
+                        width="13.5733"
+                        height="14.5513"
+                        rx="1.62166"
+                        stroke="black"
+                        strokeWidth="1.08111"
+                      />
+                      <line
+                        x1="7.38441"
+                        y1="3.72974"
+                        x2="7.38441"
+                        y2="5.96294"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="22.0388"
+                        y1="3.72961"
+                        x2="22.0388"
+                        y2="5.96281"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="7.24927"
+                        y1="4.71124"
+                        x2="21.9036"
+                        y2="4.71124"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="4.10913"
+                        y1="22.5769"
+                        x2="6.20261"
+                        y2="22.5769"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="4.10913"
+                        y1="6.94445"
+                        x2="6.20261"
+                        y2="6.94445"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="5.02062"
+                        y1="22.712"
+                        x2="5.02062"
+                        y2="7.07964"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                    </svg>
+                    {property.area}
+                  </span>
+                  <span> | {property.label}</span>
+                </div>
+
+                {/* Price */}
+                <p className="text-[#c17818] text-lg font-bold mt-3">
+                  {property.price}
+                </p>
+              </div>
             </div>
-          </div>
           ))
         ) : (
           <p className="col-span-full text-center text-gray-500">
