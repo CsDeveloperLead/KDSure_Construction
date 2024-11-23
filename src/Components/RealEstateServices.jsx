@@ -14,7 +14,7 @@ const RealEstateServices = () => {
         <div className="w-full md:w-1/2">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Service Card 1 */}
-            <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border border-[#2577F2] flex flex-col items-start">
+            <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border border-[#1095D0] flex flex-col items-start">
               <div className=" text-4xl mb-4 flex gap-4 items-center">
                 <svg
                   width="40"
@@ -39,7 +39,7 @@ const RealEstateServices = () => {
             </div>
 
             {/* Service Card 2 */}
-            <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border border-[#2577F2] flex flex-col items-start">
+            <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border border-[#1095D0] flex flex-col items-start">
               <div className=" text-4xl mb-4 flex gap-4 items-center">
                 <svg
                   width="40"
@@ -62,7 +62,7 @@ const RealEstateServices = () => {
             </div>
 
             {/* Service Card 3 */}
-            <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border border-[#2577F2] flex flex-col items-start">
+            <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border border-[#1095D0] flex flex-col items-start">
               <div className=" text-4xl mb-4 flex gap-4 items-center">
                 <svg
                   width="40"
@@ -85,7 +85,7 @@ const RealEstateServices = () => {
             </div>
 
             {/* Service Card 4 */}
-            <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border-[1.5px] border-[#2577F2] flex flex-col items-start">
+            <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border-[1.5px] border-[#1095D0] flex flex-col items-start">
               <div className=" text-4xl mb-4 flex gap-4 items-center">
                 <svg
                   width="40"
