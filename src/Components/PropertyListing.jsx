@@ -82,18 +82,18 @@ const PropertyListing = () => {
       {/* Property Type Filters */}
 
       {/* Property Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 px-8 md:px-0 gap-8 md:gap-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 px-8 md:px-0 gap-8 md:gap-24 ">
         {filteredProperties.length > 0 ? (
           filteredProperties.map((property) => (
             <div
               key={property.id}
-              className="bg-white rounded-2xl shadow-lg  w-[280px] h-[475px]"
+              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[280px] h-[475px]"
             >
-              <div className="relative">
+              <div className="relative ">
                 <img
                   src={property.img}
                   alt=""
-                  className="w-full  object-cover rounded-2xl  h-[300px] bg-gray-300"
+                  className="w-full  object-cover rounded-2xl   h-[300px] "
                 />
                 <span className="absolute bottom-2 right-2 bg-white text-gray-600 text-sm rounded-full px-2 py-1">
                   {property.extraImages}

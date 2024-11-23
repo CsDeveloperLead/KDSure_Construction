@@ -22,7 +22,7 @@ const FeaturedProperties = () => {
           {propertyData.slice(0, 4).map((property, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg  w-[280px] h-[475px]"
+              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[280px] h-[475px]"
             >
               <div className="relative">
                 <img
