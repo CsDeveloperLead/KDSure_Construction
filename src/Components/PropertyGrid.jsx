@@ -25,11 +25,11 @@ const PropertyGrid = () => {
       </div>
 
       {/* Grid Layout */}
-      <div className="md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 hidden">
+      <div className="md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 hidden">
         {propertyData.slice(0, 6).map((property) => (
           <div
             key={property.id}
-            className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end  border-blue-200 relative"
+            className=" rounded-3xl p-8 h-[450px] border flex flex-col  border-[#1095D0] justify-end   relative"
             style={{
               backgroundImage: `url(${property.img})`,
               backgroundSize: "cover",
@@ -61,7 +61,7 @@ const PropertyGrid = () => {
         {propertyData.slice(0, 3).map((property) => (
           <div
             key={property.id}
-            className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end  border-blue-200 relative"
+            className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end  border-[#1095D0] relative"
             style={{
               backgroundImage: `url(${property.img})`,
               backgroundSize: "cover",
