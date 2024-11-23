@@ -2,7 +2,7 @@ import image from "../assets/line.svg";
 const Footer = () => {
   return (
     <div className="mx-4 md:mx-10">
-      <div className="relative bg-[#2b2b2b] bg-cover bg-center md:h-[400px] rounded-3xl w-full mb-10">
+      <div className="relative bg-[#1095D0] bg-cover bg-center md:h-[400px] rounded-3xl w-full mb-10">
         {/* Background Image Layer */}
         <div className="absolute inset-0 rounded-3xl" style={{ zIndex: 1 }}>
           <img src={image} alt="" className="w-full h-full object-cover" />

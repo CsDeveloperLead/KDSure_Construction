@@ -9,7 +9,7 @@ const FeaturedProperties = () => {
       <div className="flex justify-center md:justify-between items-center gap-10 mb-10 ">
         <h2 className="text-lg md:text-5xl font-bold">Featured Properties</h2>
         <Link to='/properties'>
-        <button className="bg-[#c17818] rounded-3xl text-white py-2 w-[90px] md:w-[160px] px-3 md:px-6 text-[10px] md:text-base  flex justify-center items-center">
+        <button className="bg-[#1095D0] rounded-3xl text-white py-2 w-[90px] md:w-[160px] px-3 md:px-6 text-[10px] md:text-base  flex justify-center items-center">
           View More{" "}
           <span className="ml-2">
             <BsArrowUpRight />
@@ -146,7 +146,7 @@ const FeaturedProperties = () => {
                 </div>
 
                 {/* Price */}
-                <p className="bg-[#c17818] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
                   Get Quote
                 </p>
               </div>

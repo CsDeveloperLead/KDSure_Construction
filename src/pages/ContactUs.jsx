@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <div className="px-4 md:px-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 my-10 md:my-10 font-montserrat">
-        <div className="w-full md:w-[45%] h-[450px] md:h-[680px] flex flex-col items-center md:items-start bg-[#c17818] rounded-3xl gap-10 md:gap-40 p-8">
+        <div className="w-full md:w-[45%] h-[450px] md:h-[680px] flex flex-col items-center md:items-start bg-[#1095D0] rounded-3xl gap-10 md:gap-40 p-8">
           <div className="flex flex-col gap-3 text-white mt-10">
             <h1 className="font-bold text-2xl md:text-4xl">Contact Information</h1>
             <p className="text-base md:text-2xl">Say something to start a live chat!</p>
@@ -131,7 +131,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#c17818] uppercase text-white py-3 rounded-xl w-full md:w-[220px] mt-6"
+                className="bg-[#1095D0] uppercase text-white py-3 rounded-xl w-full md:w-[220px] mt-6"
               >
                 Send message
               </button>

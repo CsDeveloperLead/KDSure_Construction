@@ -65,13 +65,13 @@ const TestimonialCarousel = () => {
         <div className="flex gap-4">
           <button
             onClick={prevSlide}
-            className="p-1.5 md:p-3 text-black hover:text-white hover:bg-[#c17818] rounded-full "
+            className="p-1.5 md:p-3 text-black hover:text-white hover:bg-[#1095D0] rounded-full "
           >
             <FaArrowLeft />
           </button>
           <button
             onClick={nextSlide}
-            className="p-1.5 md:p-3 text-black hover:text-white hover:bg-[#c17818] rounded-full "
+            className="p-1.5 md:p-3 text-black hover:text-white hover:bg-[#1095D0] rounded-full "
           >
             <FaArrowRight />
           </button>
@@ -95,7 +95,7 @@ const TestimonialCarousel = () => {
                 .map((testimonial) => (
                   <div
                     key={testimonial.id}
-                    className="flex-none w-full md:w-1/2 bg-white rounded-3xl border border-[#c17818] p-3 md:p-4"
+                    className="flex-none w-full md:w-1/2 bg-white rounded-3xl border border-[#1095D0] p-3 md:p-4"
                   >
                     <div className="flex h-[250px]">
                       <div className="w-1/2 flex flex-col justify-between">

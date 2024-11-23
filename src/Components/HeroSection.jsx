@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div className="col-span-4 row-span-3 row-start-1 col-start-1 flex flex-col justify-center">
         <h1 className="text-7xl font-bold leading-tight">
           Discover Your Dream Home <br /> with{" "}
-          <span className="text-[#c17818]">KD SURE Infratech</span>
+          <span className="text-[#1095D0]">KD SURE Infratech</span>
         </h1>
         <p className="text-gray-600 mt-2 text-xl">
           Browse our exclusive listings and find the perfect place that matches
@@ -65,7 +65,7 @@ const HeroSection = () => {
       <div className="flex flex-col justify-center">
         <h1 className="text-5xl font-bold text-center leading-tight">
           Discover Your Dream Home <br /> with{" "}
-          <span className="text-[#c17818]">KD SURE Infratech</span>
+          <span className="text-[#1095D0]">KD SURE Infratech</span>
         </h1>
         <p className="text-gray-600 mt-4 text-lg text-center">
           Browse our exclusive listings and find the perfect place that matches

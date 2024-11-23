@@ -16,7 +16,7 @@ const PropertyGrid = () => {
             </p>
             {/* Button */}
             <div className="flex justify-end ">
-              <button className="flex items-center gap-2 bg-[#c17818] text-white py-2 px-4 h-[40px] rounded-3xl hover:bg-yellow-600">
+              <button className="flex items-center gap-2 bg-[#1095D0] text-white py-2 px-4 h-[40px] rounded-3xl hover:bg-yellow-600">
                 View More <span className="text-lg">→</span>
               </button>
             </div>

@@ -69,7 +69,7 @@ const PropertyListing = () => {
               onClick={() => setFilterCategory(type)}
               className={`px-4 md:px-10 py-1 border border-gray-300 rounded-xl ${
                 filterCategory === type
-                  ? "bg-[#c17818] text-sm md:text-base text-white"
+                  ? "bg-[#1095D0] text-sm md:text-base text-white"
                   : "bg-gray-100 text-sm md:text-base text-gray-600"
               }`}
             >
@@ -211,7 +211,7 @@ const PropertyListing = () => {
                 </div>
 
                 {/* Price */}
-                <p className="bg-[#c17818] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
                   Get Quote
                 </p>
               </div>

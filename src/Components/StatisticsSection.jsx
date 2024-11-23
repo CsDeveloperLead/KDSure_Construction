@@ -6,7 +6,7 @@ const StatisticsSection = () => {
         {/* Heading Section */}
         <div className="w-full md:w-1/2 mb-8 flex flex-col items-center md:items-start justify-center gap-4 md:gap-8 ">
           <h1 className="text-3xl md:text-7xl font-bold text-gray-900">
-            Find your dream <span className="text-[#c17818]">home</span>
+            Find your dream <span className="text-[#1095D0]">home</span>
           </h1>
           <p className="text-[#727376] text-center md:text-start text-base md:text-lg w-4/5">
             Setting a realistic budget before looking for a home will help you avoid making unsuitable choices. 
