@@ -112,7 +112,7 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  Privacy Policy
+                  Kuldeepsingh@kdsure.com
                 </p>
                 <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
@@ -129,7 +129,8 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  Disclaimer
+                  (+91) 9654987500
+
                 </p>
                 <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
@@ -146,7 +147,7 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  Terms & Conditions
+                  (+91) 9540066755
                 </p>
                 <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
