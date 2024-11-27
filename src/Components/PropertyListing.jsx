@@ -82,12 +82,12 @@ const PropertyListing = () => {
       {/* Property Type Filters */}
 
       {/* Property Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 px-8 md:px-0 gap-8 md:gap-24 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 px-8 md:px-0 gap-8 md:gap-10 ">
         {filteredProperties.length > 0 ? (
           filteredProperties.map((property) => (
             <div
               key={property.id}
-              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[280px] h-[475px]"
+              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[320px] h-[475px]"
             >
               <div className="relative ">
                 <img
@@ -108,8 +108,8 @@ const PropertyListing = () => {
                 <p className="text-gray-500">{property.location}</p>
 
                 {/* Property Info */}
-                <div className="flex items-center space-x-2 text-gray-500 text-sm mt-2 border-t border-gray-400 border-b py-1">
-                  <span className="flex gap-2 items-center">
+                <div className="flex items-center  text-gray-500 text-sm mt-2 border-t border-gray-400 border-b py-1">
+                  {/* <span className="flex gap-2 items-center">
                     <svg
                       width="20"
                       height="21"
@@ -138,8 +138,8 @@ const PropertyListing = () => {
                       />
                     </svg>
                     {property.baths}
-                  </span>
-                  <span className="flex gap-2 items-center">
+                  </span> */}
+                  <span className="flex items-center">
                     <svg
                       width="27"
                       height="28"
@@ -207,13 +207,16 @@ const PropertyListing = () => {
                     </svg>
                     {property.area}
                   </span>
-                  <span> | {property.label}</span>
+                  <span className="flex items-center"> <h1 className="px-2 text-lg font-bold">|</h1>{property.config}</span>
                 </div>
 
                 {/* Price */}
+                <span className="flex justify-between items-center text-[#1095D0] font-bold"><p>{property.price}</p>
                 <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
                   Get Quote
                 </p>
+                </span>
+                
               </div>
             </div>
           ))

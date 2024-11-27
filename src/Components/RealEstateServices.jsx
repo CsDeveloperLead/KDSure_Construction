@@ -1,3 +1,4 @@
+import img from "../assets/serviceimg.png";
 const RealEstateServices = () => {
   return (
     <div className="flex flex-col items-start gap-8 font-satoshi my-20">
@@ -109,7 +110,8 @@ const RealEstateServices = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full md:w-1/2 h-64 lg:h-[400px] bg-gray-200 rounded-lg"></div>
+        <div className=" w-full md:w-1/2 h-64 lg:h-[400px] bg-gray-200 rounded-lg">
+        <img src={img} alt="" className="w-full h-full object-cover rounded-lg"/></div>
       </div>
 
       {/* Placeholder for the image or content */}

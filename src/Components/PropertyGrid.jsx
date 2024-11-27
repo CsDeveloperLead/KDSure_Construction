@@ -45,14 +45,16 @@ const PropertyGrid = () => {
             <div className="w-full h-40 bg-gray-300 rounded mb-4"></div> */}
 
             {/* Title */}
-            <h3 className="text-4xl text-white font-bold mb-1">
+            <h3 className="text-4xl text-white font-bold mb-1"  style={{ filter: "drop-shadow(4px 4px 0.4rem black)" }}>
               {property.title}
             </h3>
 
             {/* Details */}
-            <p className="text-white font-semibold text-lg">
-              {property.rooms} rooms | {property.baths} baths | {property.area}{" "}
-              area
+            <p
+              className="text-white font-semibold text-lg"
+              style={{ filter: "drop-shadow(4px 4px 0.1rem black)" }}
+            >
+              {property.config} | {property.area} area
             </p>
           </div>
         ))}

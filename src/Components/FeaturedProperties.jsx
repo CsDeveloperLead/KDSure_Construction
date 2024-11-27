@@ -43,8 +43,8 @@ const FeaturedProperties = () => {
                 <p className="text-gray-500">{property.location}</p>
 
                 {/* Property Info */}
-                <div className="flex items-center space-x-2 text-gray-500 text-sm mt-2 border-t border-gray-400 border-b py-1">
-                  <span className="flex gap-2 items-center">
+                <div className="flex items-center  text-gray-500 text-sm mt-2 border-t border-gray-400 border-b py-1">
+                  {/* <span className="flex gap-2 items-center">
                     <svg
                       width="20"
                       height="21"
@@ -57,7 +57,7 @@ const FeaturedProperties = () => {
                         fill="#404040"
                       />
                     </svg>{" "}
-                    {property.rooms}
+                    {property.config}
                   </span>
                   <span className="flex gap-2 items-center">
                     <svg
@@ -73,8 +73,8 @@ const FeaturedProperties = () => {
                       />
                     </svg>
                     {property.baths}
-                  </span>
-                  <span className="flex gap-2 items-center">
+                  </span> */}
+                  <span className="flex items-center">
                     <svg
                       width="27"
                       height="28"
@@ -142,13 +142,18 @@ const FeaturedProperties = () => {
                     </svg>
                     {property.area}
                   </span>
-                  <span> | {property.label}</span>
+                  <span className="flex items-center"> <h1 className="px-2 text-lg font-bold">|</h1>{property.config}</span>
                 </div>
 
                 {/* Price */}
+                {/* <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                  Get Quote
+                </p> */}
+                 <span className="flex justify-between items-center text-[#1095D0] font-bold"><p>{property.price}</p>
                 <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
                   Get Quote
                 </p>
+                </span>
               </div>
             </div>
           ))}

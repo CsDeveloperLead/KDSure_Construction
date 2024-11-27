@@ -1,25 +1,17 @@
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import TestimonialCarousel from "../Components/TestimonialCarousel";
+import propertyData from "../propertyData";
+import { Link } from "react-router-dom";
+import img from "../assets/prop1.png";
 
 const About = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const cards = [
-    { id: 1, title: "Buy", count: "1,200" },
-    { id: 2, title: "Sell", count: "2,400" },
-    { id: 3, title: "Rent", count: "3,000" },
-    { id: 4, title: "Buy", count: "1,200" },
-    { id: 5, title: "Sell", count: "2,400" },
-    { id: 6, title: "Rent", count: "3,000" },
-    { id: 7, title: "Buy", count: "1,200" },
-    { id: 8, title: "Sell", count: "2,400" },
-    { id: 9, title: "Rent", count: "3,000" },
-  ];
 
   const isMobile = window.innerWidth < 768; // Mobile screen breakpoint
   const visibleCardsCount = isMobile ? 1 : 3; // 1 card for mobile, 3 for larger screens
-  const totalSlides = Math.ceil(cards.length / visibleCardsCount); // Total number of slides
+  const totalSlides = Math.ceil(propertyData.length / visibleCardsCount); // Total number of slides
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -45,8 +37,37 @@ const About = () => {
           avoid making unsuitable choices. Adjust to your financial
           capabilities, consider installment costs, taxes.
         </p>
-        <span className="bg-gray-400 rounded-3xl w-full h-[300px] md:h-[400px] mt-2 md:mt-6">
-          <img src="" alt="" />
+        <span className="rounded-3xl w-full h-[300px] md:h-[400px] mt-2 md:mt-6 mb-10">
+        <div
+        className="bg-gray-300 w-full rounded-[30px] h-full md:h-[450px] mb-10 p-4"
+        style={{
+          backgroundImage: `url(${img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className=" bg-[#292929] bg-opacity-95 w-full md:w-1/2 h-full rounded-3xl p-8 flex flex-col gap-4">
+          <h1 className="text-[#1095d0] text-3xl md:text-6xl font-bold text-center md:text-start">SPRING ELMAS</h1>
+          <p className="text-white text-base md:text-4xl font-bold text-center md:text-start">Sector 12, Greater Noida West</p>
+          <div className="md:mt-10 space-y-2 md:space-y-6">
+            <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">
+            ₹ 11K/sq.ft
+            </p>
+            <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">1355-2450 sq.ft</p>
+            <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">3/3.5/4 BHK</p>
+            <span className="flex justify-between">
+              <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
+                Get Quote
+              </button>{" "}
+              <Link to="/properties">
+                <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
+                  More Properties
+                </button>
+              </Link>
+            </span>
+          </div>
+        </div>
+      </div>
         </span>
       </div>
 
@@ -134,27 +155,36 @@ const About = () => {
 
         {/* Cards Carousel */}
         <div className="relative mx-10 pl-4 overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{
-              transform: `translateX(-${currentIndex * 100}%)`,
-            }}
-          >
-            {cards.map((card) => (
-              <div
-                key={card.id}
-                className="flex-shrink-0 w-full md:w-[33%] px-4 relative cursor-pointer h-[520px]"
-              >
-                <div className="bg-gray-200 w-full h-[400px] rounded-2xl shadow-md flex  justify-between p-6 hover:h-[500px] transition-all duration-300">
-                  <h3 className="text-xl font-semibold">{card.title}</h3>
-                  <span className="bg-white py-1 px-8 flex justify-center items-center h-[36px] rounded-full text-gray-900 text-sm font-semibold">
-                    {card.count}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
+  <div
+    className="flex transition-transform duration-500 ease-in-out"
+    style={{
+      transform: `translateX(-${currentIndex * 100}%)`,
+      
+    }}
+  >
+    {propertyData.map((card) => (
+      <div
+        key={card.id}
+        className="flex-shrink-0 w-full md:w-[33%] px-4 relative cursor-pointer h-[520px]"
+      >
+        <div
+          className="bg-gray-200 w-full h-[400px] rounded-2xl shadow-md flex justify-between p-6 hover:h-[500px] transition-all duration-300"
+          style={{
+            backgroundImage: `url(${card.img})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <h3 className="text-xl font-semibold text-white">{card.title}</h3>
+          <span className="bg-white py-1 px-8 flex justify-center items-center h-[36px] rounded-full text-gray-900 text-sm font-semibold">
+            {card.price}
+          </span>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
+
 
         {/* Navigation Buttons for Mobile
   <div className="flex justify-between gap-6 mt-4 md:hidden">
