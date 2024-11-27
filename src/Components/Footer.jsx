@@ -13,19 +13,21 @@ const Footer = () => {
           {/* Add any content here */}
 
           <div className="">
-            <div className="md:grid md:grid-cols-4 md:gap-20  mt-10 md:mt-0 text-center md:text-start flex flex-col items-center">
-              <div className="col-span-2 flex flex-col gap-6">
+            <div className="md:grid md:grid-cols-4 md:gap-2  mt-10 md:mt-0 text-center md:text-start flex flex-col items-center">
+              <div className="col-span-2 flex flex-col gap-6 ">
                 <h1 className="font-bold text-2xl md:text-6xl">
                   Make your dream home reality now
                 </h1>
-                <p className="text-sm md:text-base">
+                <p className="text-sm md:text-base md:w-[80%]">
                   The steps towards your dream home start today. Make it happen
                   now and feel the warmth of your new home with peace and
                   happiness.
                 </p>
               </div>
-              <div className="col-span-1 flex flex-col gap-3">
-                <h1 className="font-bold text-xl md:text-2xl my-1 md:my-4 mt-10 md:mt-0">Site Links</h1>
+              <div className="col-span-1 flex flex-col gap-3 ">
+                <h1 className="font-bold text-xl md:text-2xl my-1 md:my-4 mt-10 md:mt-0">
+                  Site Links
+                </h1>
                 <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
                     <svg
@@ -95,8 +97,10 @@ const Footer = () => {
                   Disclaimer
                 </p>
               </div>
-              <div className="col-span-1 flex flex-col gap-3">
-                <h1 className="font-bold text-xl md:text-2xl my-1 md:my-4 mt-10 md:mt-0">Site Links</h1>
+              <div className="col-span-1 flex flex-col gap-3 ">
+                <h1 className="font-bold text-xl md:text-2xl my-1 md:my-4 mt-10 md:mt-0">
+                  Site Links
+                </h1>
                 <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
                     <svg
@@ -129,10 +133,9 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  (+91) 9654987500
-
+                  (+91) 9654987500 || (+91) 9540066755
                 </p>
-                <p className="text-sm md:text-base flex items-center gap-2">
+                {/* <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
                     <svg
                       width="11"
@@ -147,9 +150,9 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  (+91) 9540066755
-                </p>
-                <p className="text-sm md:text-base flex items-center gap-2">
+                  
+                </p> */}
+                <p className="text-sm md:text-base flex items-start gap-2">
                   <span>
                     <svg
                       width="11"
@@ -164,7 +167,8 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  Disclaimer
+                  <p className="w-[220px] md:w-full text-start">FF-20, French Arcade, Greater Noida West,
+                  Gautam Buddh Nagar-201306, Uttar Pradesh</p>
                 </p>
               </div>
             </div>

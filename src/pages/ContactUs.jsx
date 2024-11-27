@@ -66,7 +66,8 @@ const Contact = () => {
                 </svg>
               </span>
               <span className="text-base md:text-xl">
-                132 Dartmouth Street Boston, Massachusetts 02156 United States
+              FF-20, French Arcade, Greater Noida West,
+              Gautam Buddh Nagar-201306, Uttar Pradesh
               </span>
             </div>
           </div>
