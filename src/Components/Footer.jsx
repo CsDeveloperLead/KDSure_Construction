@@ -2,7 +2,7 @@ import image from "../assets/line.svg";
 const Footer = () => {
   return (
     <div className="mx-4 md:mx-10">
-      <div className="relative bg-[#1095D0] bg-cover bg-center md:h-[400px] rounded-3xl w-full mb-10">
+      <div className="relative bg-[#1095D0] bg-cover bg-center md:h-[440px] rounded-3xl w-full mb-10">
         {/* Background Image Layer */}
         <div className="absolute inset-0 rounded-3xl" style={{ zIndex: 1 }}>
           <img src={image} alt="" className="w-full h-full object-cover" />
@@ -116,7 +116,7 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  Kuldeepsingh@kdsure.com
+                  kdsure.com
                 </p>
                 <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
@@ -133,7 +133,7 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  (+91) 9654987500 || (+91) 9540066755
+                  (+91) 9654987500 
                 </p>
                 {/* <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
@@ -310,6 +310,7 @@ const Footer = () => {
               </span>
             </div>
           </div>
+          <div className="w-full flex justify-center text-center mt-2">©2024 KDSure, made with 💖 by Campaigning Source, all rights reserved</div>
         </div>
       </div>
     </div>
