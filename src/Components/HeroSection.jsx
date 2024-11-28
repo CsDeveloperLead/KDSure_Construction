@@ -122,16 +122,16 @@ const HeroSection = () => {
           {/* Circle Elements */}
 
           <div className="w-14 h-14 bg-[#c4c4c4] rounded-full flex items-center justify-center absolute -left-20  border-gray-800 border-b">
-            <img src="" alt="" />
+            <img src={img5} alt="" className=" object-cover w-14 h-14 rounded-full border-gray-800 border-b-2"/>
           </div>
           <div className="w-14 h-14 bg-[#d3d3d3] rounded-full flex items-center justify-center absolute -left-10 border-gray-800 border-b ">
-            <img src="" alt="" />
+            <img src={img6} alt="" className=" object-cover w-14 h-14 rounded-full border-gray-800 border-b-2"/>
           </div>
           <div className="w-14 h-14 bg-[#c4c4c4] rounded-full flex items-center justify-center absolute left-0  border-gray-800 border-b">
-            <img src="" alt="" />
+            <img src={img7} alt="" className=" object-cover w-14 h-14 rounded-full border-gray-800 border-b-2"/>
           </div>
           <div className="w-14 h-14 bg-[#d3d3d3] rounded-full flex items-center justify-center absolute left-10 border-gray-800 border-b">
-            <img src="" alt="" />
+            <img src={img8} alt="" className=" object-cover w-14 h-14 rounded-full border-gray-800 border-b-2"/>
           </div>
         </div>
         {/* Text Content */}

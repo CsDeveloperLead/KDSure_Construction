@@ -168,14 +168,14 @@ const About = () => {
         className="flex-shrink-0 w-full md:w-[33%] px-4 relative cursor-pointer h-[520px]"
       >
         <div
-          className="bg-gray-200 w-full h-[400px] rounded-2xl shadow-md flex justify-between p-6 hover:h-[500px] transition-all duration-300"
+          className="bg-gray-200 w-full h-[400px] rounded-2xl shadow-md flex justify-between p-4 hover:h-[500px] transition-all duration-300"
           style={{
             backgroundImage: `url(${card.img})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h3 className="text-xl font-semibold text-white">{card.title}</h3>
+          {/* <h3 className="text-xl font-semibold text-white">{card.title}</h3> */}
           <span className="bg-white py-1 px-8 flex justify-center items-center h-[36px] rounded-full text-gray-900 text-sm font-semibold">
             {card.price}
           </span>

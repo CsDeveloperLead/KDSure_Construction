@@ -82,12 +82,12 @@ const PropertyListing = () => {
       {/* Property Type Filters */}
 
       {/* Property Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 px-8 md:px-0 gap-8 md:gap-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 px-3 md:px-0 gap-8 md:gap-10 ">
         {filteredProperties.length > 0 ? (
           filteredProperties.map((property) => (
             <div
               key={property.id}
-              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[320px] h-[475px]"
+              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[320px] h-[510px]"
             >
               <div className="relative ">
                 <img
@@ -104,7 +104,7 @@ const PropertyListing = () => {
 
               {/* Property Details */}
               <div className="p-4">
-                <h3 className="text-lg font-semibold">{property.title}</h3>
+                <h3 className="text-lg font-semibold h-[60px]">{property.title}</h3>
                 <p className="text-gray-500">{property.location}</p>
 
                 {/* Property Info */}
@@ -211,7 +211,7 @@ const PropertyListing = () => {
                 </div>
 
                 {/* Price */}
-                <span className="flex justify-between items-center text-[#1095D0] font-bold"><p>{property.price}</p>
+                <span className="flex justify-between items-center text-[#1095D0] text-sm font-bold"><p>{property.price}</p>
                 <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
                   Get Quote
                 </p>
