@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import TestimonialCarousel from "../Components/TestimonialCarousel";
 import propertyData from "../propertyData";
@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import img from "../assets/prop1.png";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [currentIndex, setCurrentIndex] = useState(0);
 
 
@@ -56,9 +59,11 @@ const About = () => {
             <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">1355-2450 sq.ft</p>
             <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">3/3.5/4 BHK</p>
             <span className="flex justify-between">
+              <Link to={"https://wa.link/ksx60s"} target="_blank" rel="noopener noreferrer">
               <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
                 Get Quote
               </button>{" "}
+              </Link>
               <Link to="/properties">
                 <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
                   More Properties
@@ -163,7 +168,10 @@ const About = () => {
     }}
   >
     {propertyData.map((card) => (
-      <div
+       <Link
+       to={card.link}
+       target="_blank"
+       rel="noopener noreferrer"
         key={card.id}
         className="flex-shrink-0 w-full md:w-[33%] px-4 relative cursor-pointer h-[520px]"
       >
@@ -180,7 +188,7 @@ const About = () => {
             {card.price}
           </span>
         </div>
-      </div>
+      </Link>
     ))}
   </div>
 </div>

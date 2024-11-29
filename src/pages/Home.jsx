@@ -6,8 +6,12 @@ import StatisticsSection from "../Components/StatisticsSection";
 import TestimonialCarousel from "../Components/TestimonialCarousel";
 import img from "../assets/prop2.png";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="mx-4 md:mx-10">
       <HeroSection />
@@ -31,9 +35,13 @@ const Home = () => {
             <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">1230-1855 sq.ft</p>
             <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">2/3 BHK</p>
             <span className="flex justify-between">
+              <Link  to={"https://wa.link/xyu1c6"}
+            target="_blank"
+            rel="noopener noreferrer">
               <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
                 Get Quote
               </button>{" "}
+              </Link>
               <Link to="/properties">
                 <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
                   More Properties

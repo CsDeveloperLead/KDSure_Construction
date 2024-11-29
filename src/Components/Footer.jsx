@@ -1,4 +1,5 @@
 import image from "../assets/line.svg";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="mx-4 md:mx-10">
@@ -133,7 +134,7 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  (+91) 9654987500 
+                  (+91) 9654987500
                 </p>
                 {/* <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
@@ -167,8 +168,10 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  <p className="w-[220px] md:w-full text-start">FF-20, French Arcade, Greater Noida West,
-                  Gautam Buddh Nagar-201306, Uttar Pradesh</p>
+                  <p className="w-[220px] md:w-full text-start">
+                    FF-20, French Arcade, Greater Noida West, Gautam Buddh
+                    Nagar-201306, Uttar Pradesh
+                  </p>
                 </p>
               </div>
             </div>
@@ -176,12 +179,24 @@ const Footer = () => {
           <hr className="text-white w-full mt-4 "></hr>
           <div className="w-full flex flex-col md:flex-row items-center gap-4 md:gap-0 md:justify-between ">
             <div className="flex items-center gap-4 md:gap-8  ">
-              <p className="hover:font-bold cursor-pointer">Home</p>
-              <p className="hover:font-bold cursor-pointer">Sell</p>
-              <p className="hover:font-bold cursor-pointer">Buy</p>
-              <p className="hover:font-bold cursor-pointer">Rent</p>
-              <p className="hover:font-bold cursor-pointer">Gallery</p>
-              <p className="hover:font-bold cursor-pointer">Services</p>
+              <Link to="/">
+              <p className="hover:font-bold cursor-pointer">Home</p></Link>
+              <Link to="/properties">
+              <p className="hover:font-bold cursor-pointer">Properties</p></Link>
+               <Link to="/about">
+              <p className="hover:font-bold cursor-pointer">About Us</p></Link>
+              <Link to="/contact">
+              <p className="hover:font-bold cursor-pointer">Contact Us</p>
+              </Link>
+              </div>
+              <Link
+                to={"https://wa.link/uhzuc8"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="hover:font-bold cursor-pointer">Get in Touch</p>
+              </Link>
+              {/* <p className="hover:font-bold cursor-pointer">Services</p> */}
             </div>
             <div className="flex items-center gap-4">
               <span>
@@ -310,10 +325,13 @@ const Footer = () => {
               </span>
             </div>
           </div>
-          <div className="w-full flex justify-center text-center mt-2">©2024 KDSure, made with 💖 by Campaigning Source, all rights reserved</div>
+          <div className="w-full flex justify-center text-center mt-2">
+            ©2024 KDSure, made with 💖 by Campaigning Source, all
+            rights reserved
+          </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 

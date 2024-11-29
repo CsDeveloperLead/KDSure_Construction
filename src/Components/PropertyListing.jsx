@@ -1,5 +1,6 @@
 import { useState } from "react";
 import propertyData from "../propertyData";
+import { Link } from "react-router-dom";
 const PropertyListing = () => {
   // Property data
 
@@ -104,7 +105,9 @@ const PropertyListing = () => {
 
               {/* Property Details */}
               <div className="p-4">
-                <h3 className="text-lg font-semibold h-[60px]">{property.title}</h3>
+                <h3 className="text-lg font-semibold h-[60px]">
+                  {property.title}
+                </h3>
                 <p className="text-gray-500">{property.location}</p>
 
                 {/* Property Info */}
@@ -207,16 +210,27 @@ const PropertyListing = () => {
                     </svg>
                     {property.area}
                   </span>
-                  <span className="flex items-center"> <h1 className="px-2 text-lg font-bold">|</h1>{property.config}</span>
+                  <span className="flex items-center">
+                    {" "}
+                    <h1 className="px-2 text-lg font-bold">|</h1>
+                    {property.config}
+                  </span>
                 </div>
 
                 {/* Price */}
-                <span className="flex justify-between items-center text-[#1095D0] text-sm font-bold"><p>{property.price}</p>
-                <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
-                  Get Quote
-                </p>
+
+                <span className="flex justify-between items-center text-[#1095D0] text-sm font-bold">
+                  <p>{property.price}</p>
+                  <Link
+                    to={property.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                      Get Quote
+                    </p>
+                  </Link>
                 </span>
-                
               </div>
             </div>
           ))

@@ -96,10 +96,12 @@ const Navbar = () => {
       )}
 
       {/* Call-to-Action Button */}
+      <Link to="/properties">
       <button className="hidden md:flex bg-[#1095D0] text-white px-4 py-2 rounded-full items-center font-semibold text-md">
         Start Exploring
         <span className="ml-2 w-8 h-8 bg-white rounded-full "></span>
       </button>
+      </Link>
     </nav>
   );
 };

@@ -1,4 +1,5 @@
 import propertyData from "../propertyData";
+import { Link } from "react-router-dom";
 
 const PropertyGrid = () => {
   return (
@@ -16,9 +17,11 @@ const PropertyGrid = () => {
             </p>
             {/* Button */}
             <div className="flex justify-end ">
-              <button className="flex items-center gap-2 bg-[#1095D0] text-white py-2 px-4 h-[40px] rounded-3xl hover:bg-yellow-600">
-                View More <span className="text-lg">→</span>
-              </button>
+              <Link to="/properties">
+                <button className="flex items-center gap-2 bg-[#1095D0] text-white py-2 px-4 h-[40px] rounded-3xl hover:bg-blue-500">
+                  View More <span className="text-lg">→</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -27,7 +30,10 @@ const PropertyGrid = () => {
       {/* Grid Layout */}
       <div className="md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 hidden">
         {propertyData.slice(0, 6).map((property) => (
-          <div
+         <Link
+         to={property.link}
+         target="_blank"
+         rel="noopener noreferrer"
             key={property.id}
             className=" rounded-3xl p-8 h-[450px] border flex flex-col  border-[#1095D0] justify-end   relative"
             style={{
@@ -36,32 +42,40 @@ const PropertyGrid = () => {
               backgroundPosition: "center",
             }}
           >
-            {/* Price Tag */}
-            <div className="absolute top-8 left-8 bg-[#f2f2f2]  text-gray-900 font-semibold text-sm px-6 py-2 rounded-full">
-              {property.price}
-            </div>
+            {" "}
+              {/* Price Tag */}
+              <div className="absolute top-8 left-8 bg-[#f2f2f2]  text-gray-900 font-semibold text-sm px-6 py-2 rounded-full">
+                {property.price}
+              </div>
 
-            {/* Placeholder for Image
+              {/* Placeholder for Image
             <div className="w-full h-40 bg-gray-300 rounded mb-4"></div> */}
 
-            {/* Title */}
-            <h3 className="text-4xl text-white font-bold mb-1"  style={{ filter: "drop-shadow(4px 4px 0.4rem black)" }}>
-              {property.title}
-            </h3>
+              {/* Title */}
+              <h3
+                className="text-4xl text-white font-bold mb-1"
+                style={{ filter: "drop-shadow(4px 4px 0.4rem black)" }}
+              >
+                {property.title}
+              </h3>
 
-            {/* Details */}
-            <p
-              className="text-white font-semibold text-lg"
-              style={{ filter: "drop-shadow(4px 4px 0.1rem black)" }}
-            >
-              {property.config} | {property.area} area
-            </p>
-          </div>
+              {/* Details */}
+              <p
+                className="text-white font-semibold text-lg"
+                style={{ filter: "drop-shadow(4px 4px 0.1rem black)" }}
+              >
+                {property.config} | {property.area} area
+              </p>
+           
+              </Link>
         ))}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:hidden">
         {propertyData.slice(0, 3).map((property) => (
-          <div
+           <Link
+           to={property.link}
+           target="_blank"
+           rel="noopener noreferrer"
             key={property.id}
             className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end  border-[#1095D0] relative"
             style={{
@@ -88,7 +102,7 @@ const PropertyGrid = () => {
               {property.rooms} rooms | {property.baths} baths | {property.area}{" "}
               area
             </p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

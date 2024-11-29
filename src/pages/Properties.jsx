@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 // Assuming PropertyListing is an array of objects
 import propertyData from "../propertyData";
 import PropertyListing from "../Components/PropertyListing";
+import { Link } from "react-router-dom";
 
 const Properties = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -42,9 +46,11 @@ const Properties = () => {
               <p className="text-gray-700 mb-6 font-bold">
                 {propertyData[currentIndex]?.config} | {propertyData[currentIndex]?.area}
               </p>
+              <Link to={propertyData[currentIndex]?.link} target="_blank" rel="noopener noreferrer">
               <button className="bg-[#1095d0] text-white px-6 py-3 rounded-full font-bold hover:bg-blue-500 transition duration-300 flex items-center"  style={{ filter: "drop-shadow(2px 2px 0.4rem black)" }}>
                 Get A Quote <ChevronRight className="ml-2" />
               </button>
+              </Link>
             </div>
           </div>
 

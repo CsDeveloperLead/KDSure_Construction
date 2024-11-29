@@ -2,19 +2,18 @@ import propertyData from "../propertyData";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-
 const FeaturedProperties = () => {
   return (
     <section className="w-full bg-gray-100 rounded-[30px] p-4 md:p-10 ">
       <div className="flex justify-center md:justify-between items-center gap-10 mb-10 ">
         <h2 className="text-lg md:text-5xl font-bold">Featured Properties</h2>
-        <Link to='/properties'>
-        <button className="bg-[#1095D0] rounded-3xl text-white py-2 w-[90px] md:w-[160px] px-3 md:px-6 text-[10px] md:text-base  flex justify-center items-center">
-          View More{" "}
-          <span className="ml-2">
-            <BsArrowUpRight />
-          </span>
-        </button>
+        <Link to="/properties">
+          <button className="bg-[#1095D0] rounded-3xl text-white py-2 w-[90px] md:w-[160px] px-3 md:px-6 text-[10px] md:text-base  flex justify-center items-center">
+            View More{" "}
+            <span className="ml-2">
+              <BsArrowUpRight />
+            </span>
+          </button>
         </Link>
       </div>
       <div className="">
@@ -142,17 +141,28 @@ const FeaturedProperties = () => {
                     </svg>
                     {property.area}
                   </span>
-                  <span className="flex items-center"> <h1 className="px-2 text-lg font-bold">|</h1>{property.config}</span>
+                  <span className="flex items-center">
+                    {" "}
+                    <h1 className="px-2 text-lg font-bold">|</h1>
+                    {property.config}
+                  </span>
                 </div>
 
                 {/* Price */}
                 {/* <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
                   Get Quote
                 </p> */}
-                 <span className="flex justify-between items-center text-[#1095D0] font-bold"><p>{property.price}</p>
-                <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
-                  Get Quote
-                </p>
+                <span className="flex justify-between items-center text-[#1095D0] font-bold">
+                  <p>{property.price}</p>
+                  <Link
+                    to={property.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                      Get Quote
+                    </p>
+                  </Link>
                 </span>
               </div>
             </div>
