@@ -178,7 +178,7 @@ const Footer = () => {
           </div>
           <hr className="text-white w-full mt-4 "></hr>
           <div className="w-full flex flex-col md:flex-row items-center gap-4 md:gap-0 md:justify-between ">
-            <div className="flex items-center gap-4 md:gap-8  ">
+            <div className="flex flex-col md:flex-row  items-center gap-4 md:gap-8  ">
               <Link to="/">
               <p className="hover:font-bold cursor-pointer">Home</p></Link>
               <Link to="/properties">
@@ -188,7 +188,6 @@ const Footer = () => {
               <Link to="/contact">
               <p className="hover:font-bold cursor-pointer">Contact Us</p>
               </Link>
-              </div>
               <Link
                 to={"https://wa.link/uhzuc8"}
                 target="_blank"
@@ -196,9 +195,8 @@ const Footer = () => {
               >
                 <p className="hover:font-bold cursor-pointer">Get in Touch</p>
               </Link>
-              {/* <p className="hover:font-bold cursor-pointer">Services</p> */}
-            </div>
-            <div className="flex items-center gap-4">
+              </div>
+              <div className="flex items-center gap-4">
               <span>
                 <svg
                   width="40"
@@ -324,11 +322,14 @@ const Footer = () => {
                 </svg>
               </span>
             </div>
-          </div>
-          <div className="w-full flex justify-center text-center mt-2">
+              
+            </div>
+            <div className="w-full flex justify-center text-center mt-2">
             ©2024 KDSure, made with 💖 by Campaigning Source, all
             rights reserved
           </div>
+          </div>
+         
         </div>
       </div>
     
