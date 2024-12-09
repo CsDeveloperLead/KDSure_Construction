@@ -6,6 +6,16 @@ import img6 from "../assets/av2.avif";
 import img7 from "../assets/av3.avif";
 import img8 from "../assets/av4.avif";
 import { useState, useEffect } from "react";
+import AutoSlidingCarousel from "./AutoSlidingCarousels";
+import banner1 from "../assets/banner1.jpg"
+import banner2 from "../assets/banner2.jpg"
+import banner3 from "../assets/banner3.jpg"
+
+const banners = [
+  banner1,
+  banner2,
+  banner3,
+];
 const HeroSection = () => {
 
   const RollingNumber = ({ targetNumber, duration, stepTime }) => {
@@ -32,6 +42,9 @@ const HeroSection = () => {
   };
   return (
     <>
+    <section className="w-full h-[450px] md:h-[600px] mt-4 md:mb-4">
+      <AutoSlidingCarousel banners={banners} className="rounded-3xl" />
+    </section>
     <div className="hidden md:grid grid-cols-6 grid-rows-8 gap-8 py-10 mb-10 font-satoshi  ">
       {/* Discover Your Dream Home Text */}
       <div className="col-span-4 row-span-3 row-start-1 col-start-1 flex flex-col justify-center">

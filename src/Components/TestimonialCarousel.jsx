@@ -5,37 +5,37 @@ const testimonials = [
   {
     id: 1,
     text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "WENDY LANE",
+    name: "Jatin Sharma",
     rating: 5,
   },
   {
     id: 2,
     text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "WENDY LANE",
+    name: "Shivani Kumari",
     rating: 5,
   },
   {
     id: 3,
     text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "WENDY LANE",
+    name: "Raajat Bhati",
     rating: 5,
   },
   {
     id: 4,
     text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "WENDY LANE",
+    name: "Akash Deep",
     rating: 5,
   },
   {
     id: 5,
     text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "WENDY LANE",
+    name: "Simarpreet singh",
     rating: 5,
   },
   {
     id: 6,
     text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "WENDY LANE",
+    name: "Saloni Yadav",
     rating: 5,
   },
 ];

@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4  px-10">
+    <nav className="flex items-center justify-between p-4 px-10">
       <div className="flex items-center space-x-2">
         {/* Logo */}
         <Link to="/">
@@ -25,7 +25,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex  space-x-8 text-[#666666]">
+      <div className="hidden md:flex  space-x-10 text-[#666666]">
         <NavLink
           to="/"
           className={({ isActive }) => isActive ? 'text-black font-bold text-lg' : 'hover:text-black text-lg '}
@@ -96,8 +96,8 @@ const Navbar = () => {
       )}
 
       {/* Call-to-Action Button */}
-      <Link to="/properties">
-      <button className="hidden md:flex bg-[#1095D0] text-white px-4 py-2 rounded-full items-center font-semibold text-md">
+      <Link to="/properties" className='hidden md:block'>
+      <button className="flex bg-[#1095D0] text-white px-4 py-2 rounded-full items-center font-semibold text-md">
         Start Exploring
         <span className="ml-2 w-8 h-8 bg-white rounded-full "></span>
       </button>
