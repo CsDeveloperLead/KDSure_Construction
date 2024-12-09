@@ -30,18 +30,20 @@ const PropertyGrid = () => {
       {/* Grid Layout */}
       <div className="md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 hidden">
         {propertyData.slice(0, 6).map((property) => (
+          <div key={property.id} className="overflow-hidden rounded-3xl">
          <Link
          to={property.link}
          target="_blank"
          rel="noopener noreferrer"
-            key={property.id}
-            className=" rounded-3xl p-8 h-[450px] border flex flex-col  border-[#1095D0] justify-end   relative"
+            
+            className=" rounded-3xl p-8 h-[450px] border flex flex-col hover:scale-110 transition duration-700 ease-in-out  border-[#1095D0] justify-end   relative"
             style={{
               backgroundImage: `url(${property.img})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           >
+            <div className="hover:scale-110">
             {" "}
               {/* Price Tag */}
               <div className="absolute top-8 left-8 bg-[#f2f2f2]  text-gray-900 font-semibold text-sm px-6 py-2 rounded-full">
@@ -66,8 +68,9 @@ const PropertyGrid = () => {
               >
                 {property.config} | {property.area} area
               </p>
-           
+              </div>
               </Link>
+              </div>
         ))}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:hidden">
@@ -77,11 +80,12 @@ const PropertyGrid = () => {
            target="_blank"
            rel="noopener noreferrer"
             key={property.id}
-            className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end  border-[#1095D0] relative"
+            className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end hover:scale-110 border-[#1095D0] relative "
             style={{
               backgroundImage: `url(${property.img})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
+              
             }}
           >
             {/* Price Tag */}

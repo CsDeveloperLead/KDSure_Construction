@@ -18,7 +18,7 @@ const FeaturedProperties = () => {
       </div>
       <div className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center  md:gap-20">
-          {propertyData.slice(0, 4).map((property, index) => (
+          {propertyData.map((property, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[280px] h-[475px]"

@@ -15,7 +15,12 @@ const RealEstateServices = () => {
         <div className="w-full md:w-1/2">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Service Card 1 */}
-            <div className="bg-[#f0f0f1] shadow-lg p-6 rounded-3xl border border-[#1095D0] flex flex-col items-start">
+            <div className="bg-[#f0f0f1] relative shadow-lg rounded-3xl  flex flex-col items-start overflow-hidden before:absolute 
+            before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%]
+            before:bg-[conic-gradient(transparent,transparent,#00a6ff)]
+            before:animate-spin
+            ">
+              <div className="absolute top-[2px] right-[2px] left-[2px] border border-[#1095d0] bottom-[2px] rounded-3xl p-6 bg-[#f0f0f1]">
               <div className=" text-4xl mb-4 flex gap-4 items-center">
                 <svg
                   width="40"
@@ -37,6 +42,7 @@ const RealEstateServices = () => {
                 Our team guides you through every step, helping you find a home
                 that fits your vision and budget.
               </p>
+              </div>
             </div>
 
             {/* Service Card 2 */}

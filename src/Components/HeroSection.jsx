@@ -37,7 +37,7 @@ const HeroSection = () => {
       <div className="col-span-4 row-span-3 row-start-1 col-start-1 flex flex-col justify-center">
         <h1 className="text-7xl font-bold leading-tight">
           Discover Your Dream Home <br /> with{" "}
-          <span className="text-[#1095D0]">KD SURE Infratech</span>
+          <span className="text-[#1095D0] typewriter">KD SURE Infratech</span>
         </h1>
         <p className="text-gray-600 mt-2 text-xl">
           Browse our exclusive listings and find the perfect place that matches
@@ -46,7 +46,7 @@ const HeroSection = () => {
       </div>
 
       {/* Square Element */}
-      <div className="col-span-2 row-span-5 row-start-4 row-end-9  rounded-3xl ">
+      <div className="col-span-2 row-span-5 row-start-4 row-end-9  rounded-3xl animate-fadeInLeft ">
         <img src={img1} alt="" className="w-full h-full object-cover rounded-3xl"/>
       </div>
 
@@ -81,7 +81,7 @@ const HeroSection = () => {
       </div>
 
       {/* Big Rectangular Area */}
-      <div className="col-start-5 row-start-1 col-span-2 row-span-6 bg-gray-300 rounded-3xl">
+      <div className="col-start-5 row-start-1 col-span-2 row-span-6 bg-gray-300 rounded-3xl animate-fadeInRight">
         <img src={img2} alt="" className="w-full h-full object-cover rounded-3xl"/>
       </div>
 
@@ -101,7 +101,7 @@ const HeroSection = () => {
     <div className=" md:hidden flex flex-col items-center gap-8 py-10 mb-10 font-satoshi  ">
       {/* Discover Your Dream Home Text */}
       <div className="flex flex-col justify-center">
-        <h1 className="text-5xl font-bold text-center leading-tight">
+        <h1 className="text-5xl font-bold text-center fade-in leading-tight">
           Discover Your Dream Home <br /> with{" "}
           <span className="text-[#1095D0]">KD SURE Infratech</span>
         </h1>
@@ -112,7 +112,7 @@ const HeroSection = () => {
       </div>
 
       {/* Square Element */}
-      <div className="w-full   h-[300px] rounded-3xl ">
+      <div className="w-full  h-[300px] rounded-3xl animate-fadeInLeft ">
         <img src={img1} alt="img" className="w-full h-full object-cover rounded-3xl"/>
       </div>
 

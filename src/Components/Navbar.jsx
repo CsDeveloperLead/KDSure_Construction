@@ -97,10 +97,15 @@ const Navbar = () => {
 
       {/* Call-to-Action Button */}
       <Link to="/properties">
-      <button className="hidden md:flex bg-[#1095D0] text-white px-4 py-2 rounded-full items-center font-semibold text-md">
+      <div className='relative overflow-hidden before:absolute 
+            before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%]
+            before:bg-[conic-gradient(transparent,transparent,#00a6ff)]
+            before:animate-spin'>
+      <button className="hidden md:flex bg-[#1095D0] text-white px-4 py-2 rounded-full items-center font-semibold text-md absolute top-[2px] right-[2px] left-[2px]">
         Start Exploring
         <span className="ml-2 w-8 h-8 bg-white rounded-full "></span>
       </button>
+      </div>
       </Link>
     </nav>
   );
