@@ -21,7 +21,7 @@ const FeaturedProperties = () => {
           {propertyData.map((property, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[280px] h-[475px]"
+              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[320px] h-[495px]"
             >
               <div className="relative">
                 <img
@@ -38,7 +38,7 @@ const FeaturedProperties = () => {
 
               {/* Property Details */}
               <div className="p-4 ">
-                <h3 className="text-lg font-semibold">{property.title}</h3>
+                <h3 className="text-lg font-semibold h-[50px]">{property.title}</h3>
                 <p className="text-gray-500">{property.location}</p>
 
                 {/* Property Info */}
