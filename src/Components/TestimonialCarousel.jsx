@@ -4,41 +4,66 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const testimonials = [
   {
     id: 1,
-    text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "Jatin Sharma",
+    text: "Buying a luxury plot with KD Realtors was the best decision ever. They understood my requirements and showed me the perfect location within days. Highly recommended!",
+    name: "Aman Khurana",
     rating: 5,
   },
   {
     id: 2,
-    text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "Shivani Kumari",
+    text: "KD Realtors ki team bahut professional hai. Mujhe ek industrial plot chahiye tha aur unhone mujhe best location aur deal dikhayi. Process bilkul transparent tha.",
+    name: "Vivek Gupta",
     rating: 5,
   },
   {
     id: 3,
-    text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "Raajat Bhati",
+    text: "We bought a residential villa through KD Realtors, and it was such a seamless process. The property was exactly as advertised, and the team guided us with all the legalities.",
+    name: "Shreya Malhotra",
     rating: 5,
   },
   {
     id: 4,
-    text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "Akash Deep",
-    rating: 5,
+    text: "Main ek luxury plot kharidna chah raha tha for investment, aur KD Realtors ne mujhe ek prime location ka option diya. Unka expertise and service bahut achha laga!",
+    name: "Ramesh Agarwal",
+    rating: 4.9,
   },
   {
     id: 5,
-    text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "Simarpreet singh",
+    text: "KD Realtors made my dream of owning a villa come true. The property was exactly what I was looking for, and they even helped with the financing process!",
+    name: "Priyanka Sharma",
     rating: 5,
   },
   {
     id: 6,
-    text: "KD sure made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
-    name: "Saloni Yadav",
+    text: "Industrial plot ka search karte waqt mujhe KD Realtors ke baare me pata chala. Professional team, smooth paperwork, aur reasonable pricing ne meri deal perfect banayi.",
+    name: "Siddharth Mehta",
+    rating: 5,
+  },
+  {
+    id: 7,
+    text: "If you are looking for prime luxury plots, KD Realtors is the go-to place. Their team provided excellent service and showed us properties in top-notch locations.",
+    name: "Tanya Kapoor",
+    rating: 5,
+  },
+  {
+    id: 8,
+    text: "Mujhe ek gated community me villa chahiye tha, aur KD Realtors ki team ne mujhe ek aise villa ka option diya jo mere budget aur expectations ko pura karta hai.",
+    name: "Ravi Verma",
+    rating: 4.8,
+  },
+  {
+    id: 9,
+    text: "KD Realtors ki wajah se main ek industrial plot secure kar paaya in a prime area. Unka guidance aur assistance paperwork ke har step me tha. Highly professional!",
+    name: "Rajeev Singh",
+    rating: 5,
+  },
+  {
+    id: 10,
+    text: "Looking for a luxury plot was never this easy! KD Realtors provided us with multiple options, and we are so happy with our purchase. Thank you for your excellent service!",
+    name: "Meenal Ahuja",
     rating: 5,
   },
 ];
+
 
 const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
