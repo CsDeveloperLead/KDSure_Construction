@@ -44,7 +44,7 @@ const PropertyGrid = () => {
               backgroundPosition: "center",
             }}
           >
-            <div className="hover:scale-110">
+            <div className="">
             {" "}
               {/* Price Tag */}
               <div className="absolute top-8 left-8 bg-[#f2f2f2]  text-gray-900 font-semibold text-sm px-6 py-2 rounded-full">

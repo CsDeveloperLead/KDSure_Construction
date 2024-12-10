@@ -10,6 +10,7 @@ import AutoSlidingCarousel from "./AutoSlidingCarousels";
 import banner1 from "../assets/banner1.jpg"
 import banner2 from "../assets/banner2.jpg"
 import banner3 from "../assets/banner3.jpg"
+import { useRef } from "react";
 
 const banners = [
   banner1,
@@ -28,6 +29,8 @@ function UpwardsCarousel({ items }) {
     return () => clearInterval(interval);
 
   }, [items.length])
+
+  
 
   return (
     <div className="relative w-full h-16 md:h-24 overflow-hidden">
@@ -75,6 +78,46 @@ const HeroSection = () => {
 
     return <h1 className="text-5xl font-bold font-montserrat">{Math.floor(currentNumber)} +</h1>
   };
+
+  const [isVisible1, setIsVisible1] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
+  const imageRef1 = useRef(null);
+  const imageRef2 = useRef(null);
+
+  useEffect(() => {
+    const observer1 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible1(true);
+          observer1.disconnect(); // Stop observing once animation starts
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    const observer2 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible2(true);
+          observer2.disconnect(); // Stop observing once animation starts
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (imageRef1.current) {
+      observer1.observe(imageRef1.current);
+    }
+
+    if (imageRef2.current) {
+      observer2.observe(imageRef2.current);
+    }
+
+    return () => {
+      observer1.disconnect();
+      observer2.disconnect();
+    };
+  }, []);
   return (
     <>
       <section className="w-full h-[450px] md:h-[600px] mt-4 md:mb-4">
@@ -94,7 +137,10 @@ const HeroSection = () => {
         </div>
 
         {/* Square Element */}
-        <div className="col-span-2 row-span-5 row-start-4 row-end-9  rounded-3xl animate-fadeInLeft ">
+        <div ref={imageRef1}
+      className={`col-span-2 row-span-5 row-start-4 row-end-9 rounded-3xl ${
+        isVisible1 ? "animate-fadeInLeft" : "opacity-0"
+      } transition-opacity duration-500`}>
           <img src={img1} alt="" className="w-full h-full object-cover rounded-3xl" />
         </div>
 
@@ -129,7 +175,10 @@ const HeroSection = () => {
         </div>
 
         {/* Big Rectangular Area */}
-        <div className="col-start-5 row-start-1 col-span-2 row-span-6 bg-gray-300 rounded-3xl animate-fadeInRight">
+        <div  ref={imageRef2}
+        className={`col-start-5 row-start-1 col-span-2 row-span-6 bg-gray-300 rounded-3xl ${
+          isVisible2 ? "animate-fadeInRight" : "opacity-0"
+        } transition-opacity duration-500`}>
           <img src={img2} alt="" className="w-full h-full object-cover rounded-3xl" />
         </div>
 
