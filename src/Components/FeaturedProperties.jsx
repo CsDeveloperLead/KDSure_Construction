@@ -22,7 +22,7 @@ const FeaturedProperties = () => {
           {propertyData.map((property, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[320px] h-[495px]"
+              className="bg-white rounded-2xl shadow-lg border md:hover:shadow-2xl duration-500 border-[#ACACAC]  w-[320px] h-[495px]"
             >
               <div className="relative">
                 <img

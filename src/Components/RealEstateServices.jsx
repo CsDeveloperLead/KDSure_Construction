@@ -17,7 +17,7 @@ const RealEstateServices = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Service Card 1 */}
             <div
-              className="bg-[#f0f0f1] relative shadow-lg rounded-3xl  flex flex-col items-start overflow-hidden before:absolute 
+              className="bg-[#f0f0f1] relative h-44 sm:h-auto shadow-lg rounded-3xl flex flex-col items-start overflow-hidden before:absolute 
             before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%]
             before:bg-[conic-gradient(transparent,transparent,#00a6ff)]
             before:animate-spin
@@ -50,13 +50,13 @@ const RealEstateServices = () => {
 
             {/* Service Card 2 */}
             <div
-              className="bg-[#f0f0f1] relative shadow-lg rounded-3xl  flex flex-col items-start overflow-hidden before:absolute 
+              className="bg-[#f0f0f1] relative h-44 sm:h-auto shadow-lg rounded-3xl  flex flex-col items-start overflow-hidden before:absolute 
             before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%]
             before:bg-[conic-gradient(transparent,transparent,#00a6ff)]
             before:animate-spin
             "
             >
-              <div className="relative top-[2px] right-[2px] left-[2px] border border-[#1095d0] bottom-[2px] rounded-3xl p-6 bg-[#f0f0f1] ">
+              <div className="relative top-[2px] w-[99%] h-[97%] right-[2px] left-[2px] border border-[#1095d0] bottom-[2px] rounded-3xl p-6 bg-[#f0f0f1] ">
                 <div className=" text-4xl mb-4 flex gap-4 items-center">
                   <svg
                     width="40"
@@ -81,7 +81,7 @@ const RealEstateServices = () => {
 
             {/* Service Card 3 */}
             <div
-              className="bg-[#f0f0f1] relative shadow-lg rounded-3xl  flex flex-col items-start overflow-hidden before:absolute 
+              className="bg-[#f0f0f1] relative h-44 sm:h-auto shadow-lg rounded-3xl flex flex-col items-start overflow-hidden before:absolute 
             before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%]
             before:bg-[conic-gradient(transparent,transparent,#00a6ff)]
             before:animate-spin
@@ -112,13 +112,13 @@ const RealEstateServices = () => {
 
             {/* Service Card 4 */}
             <div
-              className="bg-[#f0f0f1] relative shadow-lg rounded-3xl  flex flex-col items-start overflow-hidden before:absolute 
+              className="bg-[#f0f0f1] relative h-44 sm:h-auto shadow-lg rounded-3xl  flex flex-col items-start overflow-hidden before:absolute 
             before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%]
             before:bg-[conic-gradient(transparent,transparent,#00a6ff)]
             before:animate-spin
             "
             >
-              <div className="relative top-[2px] right-[2px] left-[2px] border border-[#1095d0] bottom-[2px] rounded-3xl p-6 bg-[#f0f0f1] ">
+              <div className="relative top-[2px] w-[99%] h-[97%] right-[2px] left-[2px] border border-[#1095d0] bottom-[2px] rounded-3xl p-6 bg-[#f0f0f1] ">
                 <div className=" text-4xl mb-4 flex gap-4 items-center">
                   <svg
                     width="40"
