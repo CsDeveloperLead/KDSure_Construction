@@ -164,7 +164,7 @@ const About = () => {
         </div>
 
         {/* Cards Carousel */}
-        <div className="relative mx-10 pl-4 overflow-hidden">
+        <div className="relative mx-4 md:mx-10 pl-2 md:pl-4 overflow-hidden">
   <div
     className="flex transition-transform duration-500 ease-in-out"
     style={{
@@ -181,7 +181,7 @@ const About = () => {
         className="flex-shrink-0 w-full md:w-[33%] px-4 relative cursor-pointer h-[520px]"
       >
         <div
-          className="bg-gray-200 w-full h-[400px] rounded-2xl shadow-md flex justify-between p-4 hover:h-[500px] transition-all duration-300"
+          className="bg-gray-200 w-full h-[400px] rounded-2xl shadow-md flex justify-between p-1 md:p-4 hover:h-[500px] transition-all duration-300"
           style={{
             backgroundImage: `url(${card.img})`,
             backgroundSize: "cover",
