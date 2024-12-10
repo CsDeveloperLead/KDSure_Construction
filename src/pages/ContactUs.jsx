@@ -2,8 +2,34 @@
 // import con2 from "../assets/con2.png";
 // import con3 from "../assets/con3.png";
 import { useEffect } from "react";
+import { useRef } from "react";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_efr75bc', // replace with your EmailJS service ID
+        'template_8ax1t2y', // replace with your EmailJS template ID
+        form.current,
+        'zjsxgaBlAE1A72O8D' // replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log(error.text);
+          alert('Failed to send message.');
+        }
+      );
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -85,13 +111,14 @@ const Contact = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut
           </p>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col md:flex-row gap-4 md:gap-10 justify-between">
                 <div className="w-full md:w-1/2 flex flex-col gap-1 md:gap-3">
                   <label className="">First Name</label>
                   <input
                     type="text"
+                    name="name"
                     placeholder="Ex. Jatin"
                     className="border p-2 pl-4 rounded-3xl"
                   />
@@ -110,15 +137,17 @@ const Contact = () => {
                   <label>Email Address</label>
                   <input
                     type="email"
+                    name="email"
                     placeholder="Ex. Hello@email"
                     className="border p-2 pl-4 rounded-3xl"
                   />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col gap-1 md:gap-3">
-                  <label>Subject</label>
+                  <label>Phone Number</label>
                   <input
-                    type="text"
-                    placeholder="-- subject --"
+                    type="number"
+                    name="phone"
+                    placeholder="Ex. 1234567890"
                     className="border p-2 pl-4 rounded-3xl"
                   />
                 </div>
@@ -126,7 +155,7 @@ const Contact = () => {
               <div className="flex flex-col gap-1 md:gap-3">
                 <label>Message</label>
                 <textarea
-                  name=""
+                  name="message"
                   id=""
                   cols="30"
                   rows="5"

@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import test1 from "../assets/test1.jpg";
+import test2 from "../assets/test2.jpg";
+import test3 from "../assets/test3.jpg";
+import test4 from "../assets/test4.jpg";
 
 const testimonials = [
   {
@@ -7,24 +11,28 @@ const testimonials = [
     text: "Buying a luxury plot with KD Realtors was the best decision ever. They understood my requirements and showed me the perfect location within days. Highly recommended!",
     name: "Aman Khurana",
     rating: 5,
+    img: test1,
   },
   {
     id: 2,
     text: "KD Realtors ki team bahut professional hai. Mujhe ek industrial plot chahiye tha aur unhone mujhe best location aur deal dikhayi. Process bilkul transparent tha.",
     name: "Vivek Gupta",
     rating: 5,
+    img: test2,
   },
   {
     id: 3,
     text: "We bought a residential villa through KD Realtors, and it was such a seamless process. The property was exactly as advertised, and the team guided us with all the legalities.",
     name: "Shreya Malhotra",
     rating: 5,
+    img: test3,
   },
   {
     id: 4,
     text: "Main ek luxury plot kharidna chah raha tha for investment, aur KD Realtors ne mujhe ek prime location ka option diya. Unka expertise and service bahut achha laga!",
     name: "Ramesh Agarwal",
     rating: 4.9,
+    img: test4,
   },
   {
     id: 5,
@@ -141,7 +149,9 @@ const TestimonialCarousel = () => {
                         </div>
                       </div>
                       <div className="w-1/2">
-                        <div className="w-full h-full bg-gray-300 rounded-xl md:rounded-3xl"></div>
+                        <div className="w-full h-full bg-gray-300 rounded-xl md:rounded-3xl">
+                          <img src={testimonial.img} alt="" className="w-full h-full object-cover rounded-3xl"/>
+                        </div>
                       </div>
                     </div>
                   </div>

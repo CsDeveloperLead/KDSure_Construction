@@ -101,7 +101,7 @@ const RealEstateServices = () => {
                       fill="#1095D0"
                     />
                   </svg>
-                  <h3 className="font-semibold text-xl">Rentals</h3>
+                  <h3 className="font-semibold text-xl">Commercials</h3>
                 </div>
                 <p className="text-gray-500 text-sm mt-2">
                   Looking for flexibility? We offer a range of rental options

@@ -14,8 +14,7 @@ const PropertyListing = () => {
       property.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
       property.location?.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory =
-      filterCategory === "All" || property.title === filterCategory;
-
+      filterCategory === "All" || property.type === filterCategory;
     return matchesSearch && matchesCategory;
   });
 
@@ -64,19 +63,21 @@ const PropertyListing = () => {
           </div>
         </div>
         <div className="flex gap-4 mb-6">
-          {["All", "House", "Villa", "Apartment"].map((type, index) => (
-            <button
-              key={index}
-              onClick={() => setFilterCategory(type)}
-              className={`px-4 md:px-10 py-1 border border-gray-300 rounded-xl ${
-                filterCategory === type
-                  ? "bg-[#1095D0] text-sm md:text-base text-white"
-                  : "bg-gray-100 text-sm md:text-base text-gray-600"
-              }`}
-            >
-              {type}
-            </button>
-          ))}
+          {["All", "Apartment", "Plots", "Villas", "Commercials"].map(
+            (type, index) => (
+              <button
+                key={index}
+                onClick={() => setFilterCategory(type)}
+                className={`px-4 md:px-10 py-1 border border-gray-300 rounded-xl ${
+                  filterCategory === type
+                    ? "bg-[#1095D0] text-sm md:text-base text-white"
+                    : "bg-gray-100 text-sm md:text-base text-gray-600"
+                }`}
+              >
+                {type}
+              </button>
+            )
+          )}
         </div>
       </div>
 
@@ -96,9 +97,9 @@ const PropertyListing = () => {
                   alt=""
                   className="w-full  object-cover rounded-2xl   h-[300px] "
                 />
-                <span className="absolute bottom-2 right-2 bg-white text-gray-600 text-sm rounded-full px-2 py-1">
+                {/* <span className="absolute bottom-2 right-2 bg-white text-gray-600 text-sm rounded-full px-2 py-1">
                   {property.extraImages}
-                </span>
+                </span> */}
               </div>
 
               <div className=""></div>
@@ -227,7 +228,7 @@ const PropertyListing = () => {
                     rel="noopener noreferrer"
                     className="relative group mt-3 mb-4 rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden"
                   >
-                      <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
 
                     <p className="bg-[#1095D0] relative z-10 rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold ">
                       Get Quote

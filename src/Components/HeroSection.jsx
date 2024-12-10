@@ -123,12 +123,12 @@ const HeroSection = () => {
       <section className="w-full h-[450px] md:h-[600px] mt-4 md:mb-4">
         <AutoSlidingCarousel banners={banners} className="rounded-3xl" />
       </section>
-      <div className="hidden md:grid grid-cols-6 grid-rows-8 gap-8 py-10 mb-10 font-satoshi  ">
+      <div className="hidden md:grid grid-cols-6 grid-rows-8 gap-8 pb-10  mb-10 font-satoshi  ">
         {/* Discover Your Dream Home Text */}
         <div className="col-span-4 row-span-3 row-start-1 col-start-1 flex flex-col justify-center">
           <h1 className="text-7xl font-bold leading-tight">
             Discover Your Dream <UpwardsCarousel items={carousal} /> with{" "}
-            <span className="text-[#1095D0] typewriter">KD SURE Infratech</span>
+            <span className="text-[#1095D0] typewriter">KDSURE Infratech</span>
           </h1>
           <p className="text-gray-600 mt-2 text-xl">
             Browse our exclusive listings and find the perfect place that matches
@@ -165,7 +165,7 @@ const HeroSection = () => {
           {/* Text Content */}
           <div className="flex flex-col gap-2">
             <h3 className="text-5xl font-bold">
-              <RollingNumber targetNumber={10000} duration={1000} stepTime={1} />
+              <RollingNumber targetNumber={1350} duration={1000} stepTime={1} />
 
             </h3>
             <p className="text-gray-600 text-xl">
@@ -195,7 +195,7 @@ const HeroSection = () => {
 
         </div>
       </div>
-      <div className=" md:hidden flex flex-col items-center gap-8 py-10 mb-10 font-satoshi  ">
+      <div className=" md:hidden flex flex-col items-center gap-8 py-10 pt-20 mb-10 font-satoshi  ">
         {/* Discover Your Dream Home Text */}
         <div className="flex flex-col justify-center">
           <h1 className="text-5xl font-bold text-center fade-in leading-tight">
