@@ -59,13 +59,18 @@ const About = () => {
             <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">1355-2450 sq.ft</p>
             <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">3/3.5/4 BHK</p>
             <span className="flex justify-between">
-              <Link to={"https://wa.link/ksx60s"} target="_blank" rel="noopener noreferrer">
-              <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
+              <Link to={"https://wa.link/ksx60s"} target="_blank" rel="noopener noreferrer" className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+
+              <button className="bg-[#1095d0] relative z-10 text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
                 Get Quote
               </button>{" "}
               </Link>
-              <Link to="/properties">
-                <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
+              <Link to="/properties" className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden"
+              >
+                  <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+
+                <button className="bg-[#1095d0] relative z-10 text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
                   More Properties
                 </button>
               </Link>

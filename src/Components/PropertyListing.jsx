@@ -225,8 +225,11 @@ const PropertyListing = () => {
                     to={property.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hidden md:block relative group mt-3 mb-4 rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden"
                   >
-                    <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                      <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+
+                    <p className="bg-[#1095D0] relative z-10 rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold ">
                       Get Quote
                     </p>
                   </Link>

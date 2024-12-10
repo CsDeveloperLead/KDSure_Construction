@@ -7,8 +7,9 @@ const FeaturedProperties = () => {
     <section className="w-full bg-gray-100 rounded-[30px] p-4 md:p-10 ">
       <div className="flex justify-center md:justify-between items-center gap-10 mb-10 ">
         <h2 className="text-lg md:text-5xl font-bold">Featured Properties</h2>
-        <Link to="/properties">
-          <button className="bg-[#1095D0] rounded-3xl text-white py-2 w-[90px] md:w-[160px] px-3 md:px-6 text-[10px] md:text-base  flex justify-center items-center">
+        <Link to="/properties" className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+        <button className="bg-[#1095D0] relative z-10 rounded-3xl text-white py-2 w-[90px] md:w-[160px] px-3 md:px-6 text-[10px] md:text-base  flex justify-center items-center">
             View More{" "}
             <span className="ml-2">
               <BsArrowUpRight />
@@ -158,8 +159,11 @@ const FeaturedProperties = () => {
                     to={property.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hidden md:block relative group rounded-full p-0.5 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden mt-3 mb-4"
                   >
-                    <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                      <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+
+                    <p className="bg-[#1095D0] relative z-10 rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold ">
                       Get Quote
                     </p>
                   </Link>

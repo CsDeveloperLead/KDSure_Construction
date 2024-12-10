@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link,NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import '../index.css';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -96,12 +97,20 @@ const Navbar = () => {
       )}
 
       {/* Call-to-Action Button */}
-      <Link to="/properties" className='hidden md:block'>
-      <button className="flex bg-[#1095D0] text-white px-4 py-2 rounded-full items-center font-semibold text-md">
-        Start Exploring
-        <span className="ml-2 w-8 h-8 bg-white rounded-full "></span>
-      </button>
-      </Link>
+      <Link
+  to="/properties"
+  className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden"
+>
+  {/* Running border with pseudo-element */}
+  <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+
+  {/* Button content */}
+  <button className="relative z-10 bg-[#1095D0] text-white px-4 py-2 rounded-full flex items-center font-semibold text-md">
+    Start Exploring
+    <span className="ml-2 w-8 h-8 bg-white rounded-full"></span>
+  </button>
+</Link>
+
     </nav>
   );
 };

@@ -37,13 +37,19 @@ const Home = () => {
             <span className="flex justify-between">
               <Link  to={"https://wa.link/xyu1c6"}
             target="_blank"
-            rel="noopener noreferrer">
-              <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
+            rel="noopener noreferrer"
+            className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden "
+            >
+                <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+
+              <button className="bg-[#1095d0] relative z-10 text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
                 Get Quote
               </button>{" "}
               </Link>
-              <Link to="/properties">
-                <button className="bg-[#1095d0] text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
+              <Link to="/properties" className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+
+                <button className="bg-[#1095d0] relative z-10 text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
                   More Properties
                 </button>
               </Link>

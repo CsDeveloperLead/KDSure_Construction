@@ -17,8 +17,9 @@ const PropertyGrid = () => {
             </p>
             {/* Button */}
             <div className="flex justify-end ">
-              <Link to="/properties">
-                <button className="flex items-center gap-2 bg-[#1095D0] text-white py-2 px-4 h-[40px] rounded-3xl hover:bg-blue-500">
+            <Link to="/properties" className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+                <button className="flex relative z-10 items-center gap-2 bg-[#1095D0] text-white py-2 px-4 h-[40px] rounded-3xl hover:bg-blue-500">
                   View More <span className="text-lg">→</span>
                 </button>
               </Link>

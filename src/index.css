@@ -82,5 +82,37 @@ body {
 }
 
 
+.glow {
+  animation: move 5s linear infinite;
+  offset-path: path("M0 0, 100% 0, 100% 100%, 0 100%, 0 0"); /* Moves along the card edges */
+  background: radial-gradient(circle, #00a6ff, #08aff7, transparent);
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+
+
+}
+
+
+@keyframes gradient-flow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+ 
+}
+
+.animate-gradient-flow {
+  animation: gradient-flow 1s linear infinite;
+}
+
 
 
