@@ -105,7 +105,7 @@ const Navbar = () => {
   <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
 
   {/* Button content */}
-  <button className="relative z-10 bg-[#1095D0] text-white px-4 py-2 rounded-full flex items-center font-semibold text-md">
+  <button className="hidden md:block relative z-10 bg-[#1095D0] text-white px-4 py-2 rounded-full flex items-center font-semibold text-md">
     Start Exploring
     <span className="ml-2 w-8 h-8 bg-white rounded-full"></span>
   </button>

@@ -159,7 +159,7 @@ const FeaturedProperties = () => {
                     to={property.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hidden md:block relative group rounded-full p-0.5 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden mt-3 mb-4"
+                    className="relative group rounded-full p-0.5 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden mt-3 mb-4"
                   >
                       <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
 
