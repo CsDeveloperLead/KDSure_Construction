@@ -324,16 +324,16 @@ type: "Apartment",
     price: "₹15.5K/ sq.ft",
     type: "Plots",
   },
-  {
+//   {
    
-    link: "https://wa.link/lfxord",
-    img: img38,
-    title: "Logi Industrial Hero Park",
-    location: "Ghaziabad, Uttar Pradesh",
-    area: "1500 sq ft",
-    price: "₹22.5k/ sq.ft",
-    type: "Plots",
-  },
+//     link: "https://wa.link/lfxord",
+//     img: img38,
+//     title: "Logi Industrial Hero Park",
+//     location: "Ghaziabad, Uttar Pradesh",
+//     area: "1500 sq ft",
+//     price: "₹22.5k/ sq.ft",
+//     type: "Plots",
+//   },
 ];
 if (!Array.isArray(propertyData) || propertyData.length === 0) {
 throw new Error("No data found for the propertyData array.");
