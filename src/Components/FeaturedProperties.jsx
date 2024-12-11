@@ -1,6 +1,6 @@
 import propertyData from "../propertyData";
 import { BsArrowUpRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const FeaturedProperties = () => {
   return (
@@ -8,8 +8,8 @@ const FeaturedProperties = () => {
       <div className="flex justify-center md:justify-between items-center gap-10 mb-10 ">
         <h2 className="text-lg md:text-5xl font-bold">Featured Properties</h2>
         <Link to="/properties" className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
-        <button className="bg-[#1095D0] relative z-10 rounded-3xl text-white py-2 w-[90px] md:w-[160px] px-3 md:px-6 text-[10px] md:text-base  flex justify-center items-center">
+          <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+          <button className="bg-[#1095D0] relative z-10 rounded-3xl text-white py-2 w-[90px] md:w-[160px] px-3 md:px-6 text-[10px] md:text-base  flex justify-center items-center">
             View More{" "}
             <span className="ml-2">
               <BsArrowUpRight />
@@ -20,7 +20,9 @@ const FeaturedProperties = () => {
       <div className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center  md:gap-20">
           {propertyData.map((property, index) => (
-            <div
+            <NavLink
+              to='/single-property'
+              state={{ property }}
               key={index}
               className="bg-white rounded-2xl shadow-lg border md:hover:shadow-2xl duration-500 border-[#ACACAC]  w-[320px] h-[495px]"
             >
@@ -161,7 +163,7 @@ const FeaturedProperties = () => {
                     rel="noopener noreferrer"
                     className="relative group rounded-full p-0.5 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden mt-3 mb-4"
                   >
-                      <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
 
                     <p className="bg-[#1095D0] relative z-10 rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold ">
                       Get Quote
@@ -169,7 +171,7 @@ const FeaturedProperties = () => {
                   </Link>
                 </span>
               </div>
-            </div>
+            </NavLink>
           ))}
         </div>
       </div>
