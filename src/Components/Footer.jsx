@@ -61,7 +61,7 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  Disclaimer
+                  Return Policy
                 </p>
                 <p className="text-sm md:text-base flex items-center gap-2">
                   <span>

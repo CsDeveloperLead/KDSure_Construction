@@ -149,13 +149,13 @@ const About = () => {
             <div className="flex justify-between gap-6 items-center">
               <button
                 onClick={prevSlide}
-                className="p-3 bg-[#1095D0] rounded-full text-white hover:bg-yellow-600"
+                className="p-3 bg-white text-black rounded-full hover:text-white hover:bg-[#1095D0]"
               >
                 <FaArrowLeft />
               </button>
               <button
                 onClick={nextSlide}
-                className="p-3 bg-[#1095D0] rounded-full text-white hover:bg-yellow-600"
+                className="p-3 bg-white text-black rounded-full hover:text-white hover:bg-[#1095D0]"
               >
                 <FaArrowRight />
               </button>

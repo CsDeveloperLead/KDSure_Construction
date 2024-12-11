@@ -1,4 +1,3 @@
-// propertyData.js
 import img1 from "./assets/1.png";
 import img2 from "./assets/2.png";
 import img3 from "./assets/3.png";
@@ -18,7 +17,6 @@ import img16 from "./assets/16.png";
 import img17 from "./assets/17.png";
 import img18 from "./assets/18.png";
 import img19 from "./assets/19.png";
-// import img20 from "./assets/20.png";
 import img21 from "./assets/21.png";
 import img22 from "./assets/22.png";
 import img23 from "./assets/23.png";
