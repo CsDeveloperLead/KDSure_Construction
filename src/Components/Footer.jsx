@@ -61,7 +61,7 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  Disclaimer
+                  Return Policy
                 </p>
                 <p className="text-sm md:text-base flex items-center gap-2">
                   <span>
@@ -197,7 +197,7 @@ const Footer = () => {
               </Link>
               </div>
               <div className="flex items-center gap-4">
-              <span>
+              {/* <span>
                 <svg
                   width="40"
                   height="40"
@@ -258,7 +258,8 @@ const Footer = () => {
                     fill="#14161B"
                   />
                 </svg>
-              </span>
+              </span> */}
+              <Link to={"https://www.facebook.com/profile.php?id=61569684055765&mibextid=ZbWKwL"} target="_blank" rel="noopener noreferrer">
               <span>
                 <svg
                   width="40"
@@ -290,6 +291,8 @@ const Footer = () => {
                   />
                 </svg>
               </span>
+              </Link>
+              <Link to={"https://wa.link/4b4u2o"} target="_blank" rel="noopener noreferrer">
               <span>
                 <svg
                   width="40"
@@ -321,6 +324,7 @@ const Footer = () => {
                   />
                 </svg>
               </span>
+              </Link>
             </div>
               
             </div>

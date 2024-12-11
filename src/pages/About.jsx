@@ -87,7 +87,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Statistic Item */}
           <div className="flex flex-col items-center text-center">
-            <h2 className="text-3xl font-bold text-[#1095D0]">10K+</h2>
+            <h2 className="text-3xl font-bold text-[#1095D0]">2.8K+</h2>
             <h3 className="text-base md:text-xl font-semibold text-[#727376] mt-2">
               Homes Purchased
             </h3>
@@ -98,7 +98,7 @@ const About = () => {
           </div>
           {/* Statistic Item */}
           <div className="flex flex-col items-center text-center">
-            <h2 className="text-3xl font-bold text-[#1095D0]">220K+</h2>
+            <h2 className="text-3xl font-bold text-[#1095D0]">30K+</h2>
             <h3 className="text-base md:text-xl font-semibold text-[#727376] mt-2">
               Published Properties
             </h3>
@@ -109,7 +109,7 @@ const About = () => {
           </div>
           {/* Statistic Item */}
           <div className="flex flex-col items-center text-center">
-            <h2 className="text-3xl font-bold text-[#1095D0]">360K+</h2>
+            <h2 className="text-3xl font-bold text-[#1095D0]">7K+</h2>
             <h3 className="text-base md:text-xl font-semibold text-[#727376] mt-2">
               Active Users
             </h3>
@@ -120,9 +120,9 @@ const About = () => {
           </div>
           {/* Statistic Item */}
           <div className="flex flex-col items-center text-center">
-            <h2 className="text-3xl font-bold text-[#1095D0]">48+</h2>
+            <h2 className="text-3xl font-bold text-[#1095D0]">5+</h2>
             <h3 className="text-base md:text-xl font-semibold text-[#727376] mt-2">
-              Countries Served
+              States Served
             </h3>
             <p className="text-[#727376] text-[12px] md:text-sm mt-1">
               We provide property search services that allow users to find
@@ -149,13 +149,13 @@ const About = () => {
             <div className="flex justify-between gap-6 items-center">
               <button
                 onClick={prevSlide}
-                className="p-3 bg-[#1095D0] rounded-full text-white hover:bg-yellow-600"
+                className="p-3 bg-white text-black rounded-full hover:text-white hover:bg-[#1095D0]"
               >
                 <FaArrowLeft />
               </button>
               <button
                 onClick={nextSlide}
-                className="p-3 bg-[#1095D0] rounded-full text-white hover:bg-yellow-600"
+                className="p-3 bg-white text-black rounded-full hover:text-white hover:bg-[#1095D0]"
               >
                 <FaArrowRight />
               </button>
@@ -243,7 +243,7 @@ const About = () => {
                 />
               </svg>
 
-              <h3 className="font-semibold text-xl">Property Buying</h3>
+              <h3 className="font-semibold text-xl">Property Buying & Selling</h3>
             </div>
 
             <p className="text-gray-500 text-sm mt-2">
@@ -267,10 +267,10 @@ const About = () => {
                   fill="#1095D0"
                 />
               </svg>
-              <h3 className="font-semibold text-xl">Property Selling</h3>
+              <h3 className="font-semibold text-xl">Property Banking</h3>
             </div>
             <p className="text-gray-500 text-sm mt-2">
-              Sell with confidence. We use market insights and targeted
+              Buy and sell your property with confidence. We use market insights and targeted
               strategies to get the best value for your property.
             </p>
           </div>
@@ -290,7 +290,7 @@ const About = () => {
                   fill="#1095D0"
                 />
               </svg>
-              <h3 className="font-semibold text-xl">Rentals</h3>
+              <h3 className="font-semibold text-xl">Commercials</h3>
             </div>
             <p className="text-gray-500 text-sm mt-2">
               Looking for flexibility? We offer a range of rental options suited
