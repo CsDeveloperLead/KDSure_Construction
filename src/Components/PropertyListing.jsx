@@ -62,7 +62,7 @@ const PropertyListing = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-4 mb-6">
+        <div className="flex flex-wrap justify-center gap-4 mb-6">
           {["All", "Apartment", "Plots", "Villas", "Commercials"].map(
             (type, index) => (
               <button
