@@ -37,7 +37,10 @@ const AutoSlidingCarousel = () => {
                 style={{
                   backgroundImage: `url(${property.img})`,
                   backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  // backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "right bottom",
+                  
                 }}
               >
                 <div className="flex items-end md:justify-between h-full">
