@@ -1,6 +1,6 @@
 import { useState } from "react";
 import propertyData from "../propertyData";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const PropertyListing = () => {
   // Property data
 
@@ -68,11 +68,10 @@ const PropertyListing = () => {
               <button
                 key={index}
                 onClick={() => setFilterCategory(type)}
-                className={`px-4 md:px-10 py-1 border border-gray-300 rounded-xl ${
-                  filterCategory === type
+                className={`px-4 md:px-10 py-1 border border-gray-300 rounded-xl ${filterCategory === type
                     ? "bg-[#1095D0] text-sm md:text-base text-white"
                     : "bg-gray-100 text-sm md:text-base text-gray-600"
-                }`}
+                  }`}
               >
                 {type}
               </button>
@@ -87,7 +86,9 @@ const PropertyListing = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 px-3 md:px-0 gap-8 md:gap-10 ">
         {filteredProperties.length > 0 ? (
           filteredProperties.map((property) => (
-            <div
+            <NavLink
+              to='/single-property'
+              state={{ property }}
               key={property.id}
               className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[320px] h-[510px]"
             >
@@ -236,7 +237,7 @@ const PropertyListing = () => {
                   </Link>
                 </span>
               </div>
-            </div>
+            </NavLink>
           ))
         ) : (
           <p className="col-span-full text-center text-gray-500">
