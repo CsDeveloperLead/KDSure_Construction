@@ -841,3 +841,4 @@ if (!Array.isArray(propertyData) || propertyData.length === 0) {
     throw new Error("No data found for the propertyData array.");
 }
 export default propertyData;
+
