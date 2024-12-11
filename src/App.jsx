@@ -5,6 +5,7 @@ import Properties from "./pages/Properties";
 import Contact from "./pages/ContactUs";
 import Footer from "./Components/Footer";
 import About from "./pages/About";
+import SinglePropertyPage from "./Components/SinglePropertyPage";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Route path="/properties" element={<Properties />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/single-property" element={<SinglePropertyPage />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
