@@ -165,7 +165,7 @@ const HeroSection = () => {
           {/* Text Content */}
           <div className="flex flex-col gap-2">
             <h3 className="text-5xl font-bold">
-              <RollingNumber targetNumber={1350} duration={1000} stepTime={1} />
+              <RollingNumber targetNumber={1350} duration={1000} stepTime={10} />
 
             </h3>
             <p className="text-gray-600 text-xl">
@@ -233,7 +233,7 @@ const HeroSection = () => {
           </div>
           {/* Text Content */}
           <div className="flex flex-col items-center gap-2">
-            <h3 className="text-5xl md:text-5xl font-bold">10,000+</h3>
+            <h3 className="text-5xl md:text-5xl font-bold"> <RollingNumber targetNumber={1350} duration={1000} stepTime={10} /></h3>
             <p className="text-gray-600 text-xl text-center">
               Trusted clients have found their dream homes with us.
             </p>

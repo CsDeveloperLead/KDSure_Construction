@@ -267,10 +267,10 @@ const About = () => {
                   fill="#1095D0"
                 />
               </svg>
-              <h3 className="font-semibold text-xl">Banking</h3>
+              <h3 className="font-semibold text-xl">Property Banking</h3>
             </div>
             <p className="text-gray-500 text-sm mt-2">
-              Sell with confidence. We use market insights and targeted
+              Buy and sell your property with confidence. We use market insights and targeted
               strategies to get the best value for your property.
             </p>
           </div>

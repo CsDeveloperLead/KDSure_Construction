@@ -38,7 +38,7 @@ const RealEstateServices = () => {
                     />
                   </svg>
 
-                  <h3 className="font-semibold text-xl">Property Buying</h3>
+                  <h3 className="font-semibold text-xl">Property Buying & Selling</h3>
                 </div>
 
                 <p className="text-gray-500 text-sm mt-2">
@@ -70,10 +70,10 @@ const RealEstateServices = () => {
                       fill="#1095D0"
                     />
                   </svg>
-                  <h3 className="font-semibold text-xl">Property Selling</h3>
+                  <h3 className="font-semibold text-xl">Property Banking</h3>
                 </div>
                 <p className="text-gray-500 text-sm mt-2">
-                  Sell with confidence. We use market insights and targeted
+                  Buying a property with confidence. We use market insights and targeted
                   strategies to get the best value for your property.
                 </p>
               </div>

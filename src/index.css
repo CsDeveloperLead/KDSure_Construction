@@ -114,5 +114,16 @@ body {
   animation: gradient-flow 1s linear infinite;
 }
 
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
 
+@media (max-width: 768px) {
+  .container {
+    background-size: 220%;
+    background-position:  center bottom;
+  }
+}
 
