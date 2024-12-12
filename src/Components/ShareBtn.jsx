@@ -29,7 +29,7 @@ const CopyLinkButton = ({ link }) => {
                 onClick={handleCopy}
                 className="px-4 py-2rounded-lg"
             >
-                Copy Link
+                Share
             </button>
 
             {/* Modal */}
