@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link,NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../index.css';
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/">
         <img
-          src="../assets//logo.png"
+          src={logo}
           alt="KDSure Logo"
           className="h-12"
         />
