@@ -16,7 +16,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/">
         <img
-          src="logo.png"
+          src="../assets//logo.png"
           alt="KDSure Logo"
           className="h-12"
         />
