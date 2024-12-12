@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { FaMapLocationDot } from "react-icons/fa6";
 import { PiBoundingBoxDuotone } from "react-icons/pi";
 import { FaLocationDot } from "react-icons/fa6";
@@ -50,7 +50,7 @@ function SinglePropertyPage() {
             <div className='w-full h-auto flex flex-col px-5 sm:px-7 md:px-12 mb-20 pt-7 xl:px-40'>
                 <div className='w-full h-auto flex flex-col'>
                     <div className='w-full h-auto flex flex-col justify-between gap-2 sm:flex-row sm:gap-0 sm:items-center'>
-                        <h1 className='text-xl font-bold text-[#1095D0] lg:text-3xl 2xl:text-5xl'>{property.title}</h1>
+                        <h1 className='text-xl font-bold text-[#1095D0] lg:text-3xl 2xl:text-4xl'>{property.title}</h1>
                         <div className='w-auto h-auto flex gap-2 items-end'>
                             <span className='text-lg font-bold'>₹{formatPrice(minPrice)} - {formatPrice(maxPrice)} | </span>
                             <span className='text-sm text-gray-600'>{property.price}</span>
@@ -59,9 +59,9 @@ function SinglePropertyPage() {
                     <h1 className='mt-4 md:text-lg'>By <span className='text-[#1095D0] font-semibold'>KDSure</span></h1>
                     <div className='w-full h-auto flex mt-2 justify-between flex-col md:mt-4 sm:flex-row gap-3 sm:gap-0'>
                         <span className='text-slate-600 font-semibold'>{property.location}</span>
-                        <button className='w-auto h-auto px-5 py-2 bg-[#1095D0] text-white font-semibold rounded-md cursor-pointer hover:bg-[#43b1e0] md:px-6 md:py-3'>
+                        <Link to={property.link} target="_blank" rel="noopener noreferrer" className='w-auto h-auto px-5 py-2 bg-[#1095D0] text-white font-semibold rounded-md cursor-pointer hover:bg-[#43b1e0] md:px-6 md:py-3'>
                             Contact Now
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className='w-full sm:h-[500px] my-5 flex justify-center cursor-pointer bg-gray-200 lg:my-10' onClick={() => setImagePopUp(true)}>
@@ -192,9 +192,9 @@ function SinglePropertyPage() {
                                     <IoShareSocialOutline size={20} />
                                     Share
                                 </button>
-                                <button className='w-auto h-auto p-2 px-5 rounded-md cursor-pointer flex items-center justify-center gap-2 bg-[#1095D0] md:hover:bg-[#4ebcec] font-medium text-white md:py-3 md:px-7 md:text-lg'>
+                                <Link to={property.link} target="_blank" rel="noopener noreferrer" className='w-auto h-auto p-2 px-5 rounded-md cursor-pointer flex items-center justify-center gap-2 bg-[#1095D0] md:hover:bg-[#4ebcec] font-medium text-white md:py-3 md:px-7 md:text-lg'>
                                     Ask For Details
-                                </button>
+                                </Link>
                             </div>
                         </div>
                         <div className='w-full h-auto flex flex-col'>
@@ -203,7 +203,7 @@ function SinglePropertyPage() {
                             <div className='w-full h-40 flex justify-center items-center relative md:h-60'>
                                 <div className='w-full h-full flex overflow-x-scroll gap-2' style={{ scrollbarWidth: 'none' }}>
                                     {
-                                        property.images.length > 2 && property.images.map((image, index) => (
+                                        property.images.length > 0 && property.images.map((image, index) => (
                                             <img key={index} src={image} alt="images" className='w-full h-full object-contain' />
                                         ))
                                     }
@@ -227,9 +227,9 @@ function SinglePropertyPage() {
                             <span className='text-sm xl:text-base'>₹{formatPrice(minPrice)} - {formatPrice(maxPrice)} </span>
                         </div>
                         <div className='w-auto h-auto flex sm:justify-center items-center'>
-                            <button className='w-auto h-auto px-6 py-2 bg-[#1095D0] text-white font-semibold'>
+                            <Link to={property.link} target="_blank" rel="noopener noreferrer" className='w-auto h-auto px-6 py-2 bg-[#1095D0] text-white font-semibold'>
                                 Contact Now
-                            </button>
+                            </Link>
                         </div>
                     </div>
                     <h1 className='text-white mt-2'>{property.location}</h1>
@@ -238,7 +238,7 @@ function SinglePropertyPage() {
                     </div>
                     <div className='mt-16 w-full h-auto flex gap-6 overflow-x-scroll pr-20' style={{ scrollbarWidth: "none" }}>
                         {
-                            property.images.length > 2 && property.images.map((image, index) => (
+                            property.images.length > 0 && property.images.map((image, index) => (
                                 <img key={index} src={image} alt="images" className='w-full h-[280px] 2xl:h-[440px] object-contain' />
                             ))
                         }

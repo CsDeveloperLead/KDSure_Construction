@@ -769,7 +769,7 @@ const propertyData = [
         images: [Property29img1, Property29img2, Property29img3, Property29img4, Property29img5, Property29img6],
     },
     {
-        link: "https://wa.link/00nqfr",
+        link: "https://teja-build-tech.vercel.app/properties",
         img: img31,
         title: "Indo World Space Phase 1",
         location: "Ghaziabad, Uttar Pradesh",
@@ -779,7 +779,7 @@ const propertyData = [
         type: "Commercials",
     },
     {
-        link: "https://wa.link/16fa60",
+        link: "https://teja-build-tech.vercel.app/properties",
         img: img32,
         title: "Indo World Space Phase 2",
         location: "Ghaziabad, Uttar Pradesh",
@@ -789,7 +789,7 @@ const propertyData = [
         type: "Commercials",
     },
     {
-        link: "https://wa.link/273olj",
+        link: "https://teja-build-tech.vercel.app/properties",
         img: img33,
         title: "Capital Logistic",
         location: "Ghaziabad, Uttar Pradesh",
@@ -800,7 +800,7 @@ const propertyData = [
     {
 
         img: img34,
-        link: "https://wa.link/f1lrha",
+        link: "https://teja-build-tech.vercel.app/properties",
         title: "Sai Industrial Park Phase 1",
         location: "Ghaziabad, Uttar Pradesh",
         area: "2500 sq ft",
@@ -809,7 +809,7 @@ const propertyData = [
     },
     {
 
-        link: "https://wa.link/mhemmw",
+        link: "https://teja-build-tech.vercel.app/properties",
         img: img35,
         title: "Sai Industrial Park Phase 2",
         location: "Ghaziabad, Uttar Pradesh",
@@ -818,7 +818,7 @@ const propertyData = [
         type: "Plots",
     },
     {
-        link: "https://wa.link/4ifxhb",
+        link: "https://teja-build-tech.vercel.app/properties",
         img: img36,
         title: "Mangalam Hero Park",
         location: "Haridwar, Uttarakhand",
@@ -828,7 +828,7 @@ const propertyData = [
     },
     {
 
-        link: "https://wa.link/x9f8kc",
+        link: "https://teja-build-tech.vercel.app/properties",
         img: img37,
         title: "MG Industrial Park",
         location: "Ghaziabad, Uttar Pradesh",

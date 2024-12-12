@@ -69,8 +69,8 @@ const PropertyListing = () => {
                 key={index}
                 onClick={() => setFilterCategory(type)}
                 className={`px-4 md:px-10 py-1 border border-gray-300 rounded-xl ${filterCategory === type
-                    ? "bg-[#1095D0] text-sm md:text-base text-white"
-                    : "bg-gray-100 text-sm md:text-base text-gray-600"
+                  ? "bg-[#1095D0] text-sm md:text-base text-white"
+                  : "bg-gray-100 text-sm md:text-base text-gray-600"
                   }`}
               >
                 {type}
@@ -86,11 +86,9 @@ const PropertyListing = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 px-3 md:px-0 gap-8 md:gap-10 ">
         {filteredProperties.length > 0 ? (
           filteredProperties.map((property) => (
-            <NavLink
-              to='/single-property'
-              state={{ property }}
+            <div
               key={property.id}
-              className="bg-white rounded-2xl shadow-lg border border-[#ACACAC]  w-[320px] h-[510px]"
+              className="bg-white rounded-2xl shadow-lg border md:hover:shadow-2xl border-[#ACACAC]  w-[320px] h-[510px]"
             >
               <div className="relative ">
                 <img
@@ -223,10 +221,9 @@ const PropertyListing = () => {
 
                 <span className="flex justify-between items-center text-[#1095D0] text-sm font-bold">
                   <p>{property.price}</p>
-                  <Link
-                    to={property.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <NavLink
+                    to='/single-property'
+                    state={{ property }}
                     className="relative group mt-3 mb-4 rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
@@ -234,10 +231,10 @@ const PropertyListing = () => {
                     <p className="bg-[#1095D0] relative z-10 rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold ">
                       Get Quote
                     </p>
-                  </Link>
+                  </NavLink>
                 </span>
               </div>
-            </NavLink>
+            </div>
           ))
         ) : (
           <p className="col-span-full text-center text-gray-500">
