@@ -283,6 +283,7 @@ import Property29img6 from "./assets/properties/Property29/img6.png";
 
 const propertyData = [
   {
+    id: 1,
     title: "ACE HANEI",
     location: "Sector 12, Greater Noida West",
     area: "2290-4190 sq.ft",
@@ -349,6 +350,7 @@ const propertyData = [
     ],
   },
   {
+    id: 2,
     title: "MAHAGUN 2.0",
     location: "Sector 12, Greater Noida West",
     price: "₹ 7.64k/sq.ft",
@@ -415,6 +417,7 @@ const propertyData = [
     ],
   },
   {
+    id: 3,
     title: "ELDECO LA VIDA BELA",
     location: "Sector 12, Greater Noida West",
     area: "1905-3330 sq.ft",
@@ -481,6 +484,7 @@ const propertyData = [
     ],
   },
   {
+    id: 4,
     title: "BROOK & RIVULET",
     location: "Sector 12, Greater Noida West",
     img: img4,
@@ -545,6 +549,7 @@ const propertyData = [
     ],
   },
   {
+    id: 5,
     title: "SPRING ELMAS",
     location: "Sector 12, Greater Noida West",
     img: img5,
@@ -609,6 +614,7 @@ const propertyData = [
     ],
   },
   {
+    id: 6,
     title: "VVIP",
     location: "Sector 12, Greater Noida West",
     img: img7,
@@ -673,6 +679,7 @@ const propertyData = [
     ],
   },
   {
+    id: 7,
     title: "CIVITECH STRINGS",
     location: "Sector 12, Greater Noida West",
     img: img6,
@@ -737,6 +744,7 @@ const propertyData = [
     ],
   },
   {
+    id: 8,
     title: "IRISH PLATINUM",
     location: "Sector 10",
     img: img8,
@@ -800,6 +808,7 @@ const propertyData = [
     ],
   },
   {
+    id: 9,
     title: "ARIHANT ADOBE",
     location: "Sector 10",
     img: img9,
@@ -865,6 +874,7 @@ const propertyData = [
     ],
   },
   {
+    id: 10,
     title: "CRC JOYOUS",
     location: "Sector Techzone 4",
     img: img10,
@@ -930,6 +940,7 @@ const propertyData = [
     ],
   },
   {
+    id: 11,
     title: "PANCHSHEEL GREENS 2",
     location: "Sector 16B",
     img: img12,
@@ -996,6 +1007,7 @@ const propertyData = [
     ],
   },
   {
+    id: 12,
     title: "R.G. LUXURY",
     location: "Sector 16B",
     img: img14,
@@ -1062,6 +1074,7 @@ const propertyData = [
     ],
   },
   {
+    id: 13,
     title: "ELITE X",
     location: "Sector 10",
     img: img15,
@@ -1128,6 +1141,7 @@ const propertyData = [
   },
 
   {
+    id: 14,
     title: "FRENCH APARTMENT",
     location: "Sector 16B",
     img: img16,
@@ -1192,6 +1206,7 @@ const propertyData = [
     ],
   },
   {
+    id: 15,
     title: "FUSION HOMES",
     location: "Sector Techzone 4",
     img: img11,
@@ -1259,6 +1274,7 @@ const propertyData = [
     ],
   },
   {
+    id: 16,
     title: "PANCHSHEEL GREENS",
     location: "Sector 16B",
     img: img13,
@@ -1325,6 +1341,7 @@ const propertyData = [
     ],
   },
   {
+    id: 17,
     title: "NIRALE ASPIRE",
     location: "Sector 16B",
     img: img17,
@@ -1387,6 +1404,7 @@ const propertyData = [
     ],
   },
   {
+    id: 18,
     title: "ACE CITY",
     location: "Sector 1",
     img: img18,
@@ -1452,6 +1470,7 @@ const propertyData = [
     ],
   },
   {
+    id: 19,
     title: "ROYAL COURT",
     location: "Sector 16B",
     img: img19,
@@ -1517,6 +1536,7 @@ const propertyData = [
     ],
   },
   {
+    id: 20,
     title: "CHERRY COUNTY",
     location: "Sector 16 Techzone 4",
     img: img21,
@@ -1581,6 +1601,7 @@ const propertyData = [
     ],
   },
   {
+    id: 21,
     title: "S.K.A GREEN ARCH",
     location: "Sector 16B",
     img: img22,
@@ -1647,6 +1668,7 @@ const propertyData = [
     ],
   },
   {
+    id: 22,
     title: "S.K.A DIVYA",
     location: "Sector 16B",
     img: img23,
@@ -1732,6 +1754,7 @@ const propertyData = [
     ],
   },
   {
+    id: 24,
     title: "AMRAPALI RIVER VIEW",
     location: "Techzone 4",
     img: img25,
@@ -1796,6 +1819,7 @@ const propertyData = [
     ],
   },
   {
+    id: 25,
     title: "AMRAPALI GOLF HOMES",
     location: "Sector 4",
     img: img26,
@@ -1853,6 +1877,7 @@ const propertyData = [
     ],
   },
   {
+    id: 26,
     title: "AMRAPALI CENTURIYAN PARK O2 VALLEY",
     location: "Techzone 4",
     img: img27,
@@ -1914,6 +1939,7 @@ const propertyData = [
     ],
   },
   {
+    id: 27,
     title: "AMRAPALI CENTURIYAN PARK LOW RISE",
     location: "Techzone 4",
     img: img28,
@@ -1972,6 +1998,7 @@ const propertyData = [
     ],
   },
   {
+    id: 28,
     title: "AMRAPALI CENTURIYAN PARK TERRACE HOMES",
     location: "Techzone 4",
     img: img29,
@@ -2033,6 +2060,7 @@ const propertyData = [
     ],
   },
   {
+    id: 29,
     title: "AMRAPALI DREAM VALLEY",
     location: "Techzone 4",
     img: img30,
