@@ -290,6 +290,7 @@ const propertyData = [
     price: "₹ 11k/sq.ft",
     config: "3/4 BHK",
     possesions: "Oct, 2028",
+    type: "Apartment",
     img: img1,
     link: "https://wa.link/z5k6pq",
     details: [
@@ -357,6 +358,7 @@ const propertyData = [
     area: "935-2190 sq.ft",
     config: "2/3/4 BHK",
     possesions: "N/A",
+    type: "Apartment",
     img: img2,
     link: "https://wa.link/poia08",
     details: [
@@ -425,6 +427,7 @@ const propertyData = [
     config: "3/4 BHK",
     possesions: "Jan, 2029",
     img: img3,
+    type: "Apartment",
     link: "https://wa.link/2yeip0", // Dont have details
     details: [
       "Project designed by renowned architect Hafeez Contractor",
@@ -491,6 +494,7 @@ const propertyData = [
     area: "645-1075 sq.ft",
     price: "₹ 12.1k/sq.ft",
     config: "3/4 BHK",
+    type: "Apartment",
     possesions: "June, 2029",
     link: "https://wa.link/ciodxs",
     details: [
@@ -557,6 +561,7 @@ const propertyData = [
     area: "1355-2450 sq.ft",
     config: "3/3.5/4 BHK",
     possesions: "Feb, 2029",
+    type: "Apartment",
     link: "https://wa.link/ksx60s",
     details: [
       "Convenient 10-minute drive to the FNG Expressway",
@@ -622,6 +627,7 @@ const propertyData = [
     area: "1060-2630 sq.ft",
     config: "2/2.5/3 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     link: "https://wa.link/7ml3ww",
     details: [
       "Pollution free enviornment for healthy life style",
@@ -687,6 +693,7 @@ const propertyData = [
     area: "1090-1275 sq.ft",
     config: "2/3 BHK",
     possesions: "Sep, 2027",
+    type: "Apartment",
     link: "https://wa.link/ebk54b",
     details: [
       "Earthquake Resistant Structure",
@@ -752,6 +759,7 @@ const propertyData = [
     area: "1925-2550 sq.ft",
     config: "3/4 BHK",
     possesions: "Jan, 2029",
+    type: "Apartment",
     link: "https://wa.link/sqa2kh",
     details: [
       "Irish Platinum is the legacy project of Irish Group, after the land mark delivery of Irish Pearls, which is a state of the art project, which has redefined the standard of luxury living with twin skyscrapers , shining bright in Noida Extension's sky line.",
@@ -816,6 +824,7 @@ const propertyData = [
     area: "920-1270 sq.ft",
     config: "2/3/ BHK",
     possesions: "May, 2025",
+    type: "Apartment",
     link: "https://wa.link/i464qb",
     details: [
       "Design for ample sunlight within the complex and in most of the units",
@@ -882,6 +891,7 @@ const propertyData = [
     area: "637-1121 sq.ft",
     config: "2/3/4 BHK",
     possesions: "June, 2027",
+    type: "Apartment",
     link: "https://wa.link/wo7ijg",
     details: [
       "Architect Hafeez Contractor has designed the project.",
@@ -948,6 +958,7 @@ const propertyData = [
     area: "915-1105 sq.ft",
     config: "2 BHK",
     possesions: "Mar, 2022",
+    type: "Apartment",
     link: "https://wa.link/5rd0jv",
     details: [
       "2 state-of-the art 3 storied magnificent ac club of approx.23000sq.ft.(2136.77sq.mtr.) each",
@@ -1015,6 +1026,7 @@ const propertyData = [
     area: "579-645 sq.ft",
     config: "2/3 BHK",
     possesions: "Mar, 2026",
+    type: "Apartment",
     link: "https://wa.link/6owcfd", // Dont have details
     details: [
       "2 state-of-the art 3 storied magnificent ac club of approx.23000sq.ft.(2136.77sq.mtr.) each",
@@ -1082,6 +1094,7 @@ const propertyData = [
     area: "1800-2638 sq.ft",
     config: "3/4 BHK",
     possesions: "Dec, 2028",
+    type: "Apartment",
     link: "https://wa.link/vhsenb",
     details: [
       "3/4 BHK Ultra Luxury Project",
@@ -1149,6 +1162,7 @@ const propertyData = [
     area: "1100-1300 sq.ft",
     config: "2/2.5/3/4 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     link: "https://wa.link/8ug2wu",
     fullLocation: "GH-07B, Sector 16B Noida Extension, Greater Noida",
     details: [
@@ -1214,6 +1228,7 @@ const propertyData = [
     area: "888-2175 sq.ft",
     config: "2/2.5/3/4/4.5 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     link: "https://wa.link/bv6pm0",
     fullLocation: "GH 05A, Tech Zone 4, Greater Noida",
     details: [
@@ -1282,6 +1297,7 @@ const propertyData = [
     area: "775-2350 sq.ft",
     config: "3/4/5 BHK",
     possesions: "May, 2018",
+    type: "Apartment",
     link: "https://wa.link/set9wv",
     fullLocation:
       "Plot No. GH-01, Sector 16B, Noida Extension, Greater Noida, Uttar Pradesh 201301",
@@ -1349,6 +1365,7 @@ const propertyData = [
     area: "890-2480 sq.ft",
     config: "2/3 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     link: "https://wa.link/f3h4qv",
     fullLocation: "GH-03, Sector 16 Noida Extension, Greater Noida",
     details: [
@@ -1412,6 +1429,7 @@ const propertyData = [
     area: "1080-1530 sq.ft",
     config: "2/3 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     link: "https://wa.link/db911e",
     fullLocation: "Plot No 1, Sector 1 Noida Extension, Greater Noida",
     details: [
@@ -1477,6 +1495,7 @@ const propertyData = [
     price: "6.81 K - ₹9.15 K/sq.ft",
     area: "1230-1855 sq.ft",
     config: "2/3 BHK",
+    type: "Apartment",
     possesions: "Ready to Move",
     link: "https://wa.link/xyu1c6",
     fullLocation: "GH 4C, Sector 16 Noida Extension, Greater Noida",
@@ -1543,6 +1562,7 @@ const propertyData = [
     price: "₹8.53K/sq.ft",
     area: "891-2232 sq.ft",
     config: "2/3/4 BHK",
+    type: "Apartment",
     possesions: "Ready to Move",
     link: "https://wa.link/bw6zhk",
     fullLocation: "GH 05A, Sector Techzone 4, Greater Noida",
@@ -1610,6 +1630,7 @@ const propertyData = [
     area: "1009-1600 sq.ft",
     config: "2/3 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     fullLocation:
       "GH-10A, Sector - Techzone IV, Greater Noida, Uttar Pradesh 201301",
     details: [
@@ -1676,6 +1697,7 @@ const propertyData = [
     price: "₹11K/sq.ft",
     area: "1260-1775 sq.ft",
     config: "2/3 BHK",
+    type: "Apartment",
     possesions: "N/A",
     details: [
       "Innovative design, luxurious properties",
@@ -1697,6 +1719,7 @@ const propertyData = [
     area: "845-1730 sq.ft",
     config: "2/2.5/3 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     link: "https://wa.link/rux4we",
     fullLocation: "Techzone 4, Greater Noida",
     details: [
@@ -1761,6 +1784,7 @@ const propertyData = [
     price: "₹ 10.6k/sq.ft",
     area: "845-1145 sq.ft",
     config: "2/2.5/3 BHK",
+    type: "Apartment",
     possesions: "Ready to Move",
     link: "https://wa.link/252xg4",
     fullLocation: "GH 01, Sector-2, Techzone 4, Greater Noida",
@@ -1827,6 +1851,7 @@ const propertyData = [
     area: "1157-2018 sq.ft",
     config: "2/3 BHK",
     possesions: "June, 2018",
+    type: "Apartment",
     link: "https://wa.link/ji3hbs",
     fullLocation:
       "Opposite Wipro Sector Delta 1, Sector- PI, PI, Greater Noida",
@@ -1885,6 +1910,7 @@ const propertyData = [
     area: "1690-2950 sq.ft",
     config: "2/2.5/3 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     link: "https://wa.link/y3qlqt",
     fullLocation: "GH 05, Techzone-4, Greater Noida",
     details: [
@@ -1947,6 +1973,7 @@ const propertyData = [
     area: "1055-1675 sq.ft",
     config: "2/3 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     link: "https://wa.link/6uycyq",
     fullLocation: "GH 05, Techzone-4, Greater Noida",
     details: [
@@ -2006,6 +2033,7 @@ const propertyData = [
     area: "885-2070 sq.ft",
     config: "2/2.5/3/3.5/4 BHK",
     possesions: "Ready to Move",
+    type: "Apartment",
     link: "https://wa.link/ve6fz3",
     fullLocation: "Plot No. GH-05, Techzone- 4, Greater Noida",
     details: [
@@ -2068,6 +2096,7 @@ const propertyData = [
     area: "1690-2950 sq.ft",
     config: "3/4/5 BHK",
     possesions: "Dec, 2022",
+    type: "Apartment",
     link: "https://wa.link/ohewl8",
     fullLocation: "Unit No 2, Plot No 21, Techzone 4, Greater Noida",
     details: [

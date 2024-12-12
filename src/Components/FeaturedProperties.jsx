@@ -7,7 +7,10 @@ const FeaturedProperties = () => {
     <section className="w-full bg-gray-100 rounded-[30px] p-4 md:p-10 ">
       <div className="flex justify-center md:justify-between items-center gap-10 mb-10 ">
         <h2 className="text-lg md:text-5xl font-bold">Featured Properties</h2>
-        <Link to="/properties" className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden">
+        <Link
+          to="/properties"
+          className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden"
+        >
           <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
           <button className="bg-[#1095D0] relative z-10 rounded-3xl text-white py-2 w-[90px] md:w-[160px] px-3 md:px-6 text-[10px] md:text-base  flex justify-center items-center">
             View More{" "}
@@ -20,7 +23,8 @@ const FeaturedProperties = () => {
       <div className="">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center  md:gap-20">
           {propertyData.slice(0, 29).map((property, index) => (
-            <div
+            <Link
+              to={`/single-property/${property.id}`}
               key={index}
               className="bg-white rounded-2xl shadow-lg border md:hover:shadow-2xl duration-500 border-[#ACACAC]  w-[320px] h-[495px]"
             >
@@ -39,7 +43,9 @@ const FeaturedProperties = () => {
 
               {/* Property Details */}
               <div className="p-4 ">
-                <h3 className="text-lg font-semibold h-[50px]">{property.title}</h3>
+                <h3 className="text-lg font-semibold h-[50px]">
+                  {property.title}
+                </h3>
                 <p className="text-gray-500">{property.location}</p>
 
                 {/* Property Info */}
@@ -156,7 +162,7 @@ const FeaturedProperties = () => {
                 <span className="flex justify-between items-center text-[#1095D0] font-bold">
                   <p>{property.price}</p>
                   <NavLink
-                    to={`/single-property/${property.id}`}
+                    to={property.link}
                     className="relative group rounded-full p-0.5 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden mt-3 mb-4"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
@@ -167,127 +173,128 @@ const FeaturedProperties = () => {
                   </NavLink>
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
-          {
-            propertyData.slice(30).map((property, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-lg border md:hover:shadow-2xl duration-500 border-[#ACACAC]  w-[320px] h-[495px]"
-              >
-                <div className="relative">
-                  <img
-                    src={property.img}
-                    alt=""
-                    className="w-full  object-cover rounded-2xl  h-[300px] bg-gray-300"
-                  />
-                </div>
+          {propertyData.slice(30).map((property, index) => (
+            <Link
+              to={`/single-property/${property.id}`}
+              key={index}
+              className="bg-white rounded-2xl shadow-lg border md:hover:shadow-2xl duration-500 border-[#ACACAC]  w-[320px] h-[495px]"
+            >
+              <div className="relative">
+                <img
+                  src={property.img}
+                  alt=""
+                  className="w-full  object-cover rounded-2xl  h-[300px] bg-gray-300"
+                />
+              </div>
 
-                <div className=""></div>
+              <div className=""></div>
 
-                {/* Property Details */}
-                <div className="p-4 ">
-                  <h3 className="text-lg font-semibold h-[50px]">{property.title}</h3>
-                  <p className="text-gray-500">{property.location}</p>
+              {/* Property Details */}
+              <div className="p-4 ">
+                <h3 className="text-lg font-semibold h-[50px]">
+                  {property.title}
+                </h3>
+                <p className="text-gray-500">{property.location}</p>
 
-                  {/* Property Info */}
-                  <div className="flex items-center  text-gray-500 text-sm mt-2 border-t border-gray-400 border-b py-1">
-                    <span className="flex items-center">
-                      <svg
-                        width="27"
-                        height="28"
-                        viewBox="0 0 27 28"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          x="7.78982"
-                          y="7.62014"
-                          width="13.5733"
-                          height="14.5513"
-                          rx="1.62166"
-                          stroke="black"
-                          strokeWidth="1.08111"
-                        />
-                        <line
-                          x1="7.38441"
-                          y1="3.72974"
-                          x2="7.38441"
-                          y2="5.96294"
-                          stroke="black"
-                          strokeWidth="0.270276"
-                        />
-                        <line
-                          x1="22.0388"
-                          y1="3.72961"
-                          x2="22.0388"
-                          y2="5.96281"
-                          stroke="black"
-                          strokeWidth="0.270276"
-                        />
-                        <line
-                          x1="7.24927"
-                          y1="4.71124"
-                          x2="21.9036"
-                          y2="4.71124"
-                          stroke="black"
-                          strokeWidth="0.270276"
-                        />
-                        <line
-                          x1="4.10913"
-                          y1="22.5769"
-                          x2="6.20261"
-                          y2="22.5769"
-                          stroke="black"
-                          strokeWidth="0.270276"
-                        />
-                        <line
-                          x1="4.10913"
-                          y1="6.94445"
-                          x2="6.20261"
-                          y2="6.94445"
-                          stroke="black"
-                          strokeWidth="0.270276"
-                        />
-                        <line
-                          x1="5.02062"
-                          y1="22.712"
-                          x2="5.02062"
-                          y2="7.07964"
-                          stroke="black"
-                          strokeWidth="0.270276"
-                        />
-                      </svg>
-                      {property.area}
-                    </span>
-                    <span className="flex items-center">
-                      {" "}
-                      <h1 className="px-2 text-lg font-bold">|</h1>
-                      {property.config}
-                    </span>
-                  </div>
-
-                  {/* Price */}
-                  {/* <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
-                  Get Quote
-                </p> */}
-                  <span className="flex justify-between items-center text-[#1095D0] font-bold">
-                    <p>{property.price}</p>
-                    <Link
-                      to={property.link}
-                      className="relative group rounded-full p-0.5 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden mt-3 mb-4"
+                {/* Property Info */}
+                <div className="flex items-center  text-gray-500 text-sm mt-2 border-t border-gray-400 border-b py-1">
+                  <span className="flex items-center">
+                    <svg
+                      width="27"
+                      height="28"
+                      viewBox="0 0 27 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
-
-                      <p className="bg-[#1095D0] relative z-10 rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold ">
-                        Get Quote
-                      </p>
-                    </Link>
+                      <rect
+                        x="7.78982"
+                        y="7.62014"
+                        width="13.5733"
+                        height="14.5513"
+                        rx="1.62166"
+                        stroke="black"
+                        strokeWidth="1.08111"
+                      />
+                      <line
+                        x1="7.38441"
+                        y1="3.72974"
+                        x2="7.38441"
+                        y2="5.96294"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="22.0388"
+                        y1="3.72961"
+                        x2="22.0388"
+                        y2="5.96281"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="7.24927"
+                        y1="4.71124"
+                        x2="21.9036"
+                        y2="4.71124"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="4.10913"
+                        y1="22.5769"
+                        x2="6.20261"
+                        y2="22.5769"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="4.10913"
+                        y1="6.94445"
+                        x2="6.20261"
+                        y2="6.94445"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                      <line
+                        x1="5.02062"
+                        y1="22.712"
+                        x2="5.02062"
+                        y2="7.07964"
+                        stroke="black"
+                        strokeWidth="0.270276"
+                      />
+                    </svg>
+                    {property.area}
+                  </span>
+                  <span className="flex items-center">
+                    {" "}
+                    <h1 className="px-2 text-lg font-bold">|</h1>
+                    {property.config}
                   </span>
                 </div>
+
+                {/* Price */}
+                {/* <p className="bg-[#1095D0] rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold mt-3 mb-4">
+                  Get Quote
+                </p> */}
+                <span className="flex justify-between items-center text-[#1095D0] font-bold">
+                  <p>{property.price}</p>
+                  <Link
+                    to={property.link}
+                    className="relative group rounded-full p-0.5 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden mt-3 mb-4"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+
+                    <p className="bg-[#1095D0] relative z-10 rounded-full w-[120px] text-white flex justify-center items-center py-1 cursor-pointer  text-lg font-bold ">
+                      Get Quote
+                    </p>
+                  </Link>
+                </span>
               </div>
-            ))
-          }
+            </Link>
+          ))}
         </div>
       </div>
     </section>
