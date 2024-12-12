@@ -156,8 +156,7 @@ const FeaturedProperties = () => {
                 <span className="flex justify-between items-center text-[#1095D0] font-bold">
                   <p>{property.price}</p>
                   <NavLink
-                    to='/single-property'
-                    state={{ property }}
+                    to={`/single-property/${property.id}`}
                     className="relative group rounded-full p-0.5 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden mt-3 mb-4"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { PiBoundingBoxDuotone } from "react-icons/pi";
 import { FaLocationDot } from "react-icons/fa6";
@@ -8,33 +8,30 @@ import { RiMoneyRupeeCircleFill } from "react-icons/ri";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
+import propertyData from "../propertyData";
 
 function SinglePropertyPage() {
   const [imagePopUp, setImagePopUp] = useState(false);
   const [isImages, setIsImages] = useState(false);
-
-  const location = useLocation();
-
-  const { property } = location.state;
-
-  console.log(property);
+  const [property, setProperty] = useState({})
+  const { id } = useParams()
 
   // Parse the area range (e.g., "935-2190 sq.ft")
-  const areaRange = property.area.split("-");
-  const minArea = parseFloat(areaRange[0].trim());
-  const maxArea = parseFloat(areaRange[1].trim());
+  const areaRange = property?.area?.split("-") || [];
+  const minArea = parseFloat(areaRange[0]?.trim()) || 0;
+  const maxArea = parseFloat(areaRange[1]?.trim()) || 0;
 
-  // Parse the price per square foot (e.g., "₹ 7.64k/sq.ft")
+  // Prevent error if `property.price` is undefined
   const pricePerSqFt =
     parseFloat(
-      property.price
-        .replace("₹", "")
-        .replace("k", "")
-        .replace("/", "")
-        .replace("sq.ft", "")
-        .replace(",", "")
-        .trim()
-    ) * 1000; // Convert to full value
+      property?.price
+        ?.replace("₹", "")
+        ?.replace("k", "")
+        ?.replace("/", "")
+        ?.replace("sq.ft", "")
+        ?.replace(",", "")
+        ?.trim()
+    ) * 1000 || 0;
 
   // Calculate the minimum and maximum price
   const minPrice = minArea * pricePerSqFt;
@@ -49,9 +46,12 @@ function SinglePropertyPage() {
   };
 
   useEffect(() => {
-    if (property?.images.length > 0) setIsImages(true);
+    const matchedProperty = propertyData.find((item) => item.id === Number(id))
+    // console.log(matchedProperty);
+    setProperty(matchedProperty || {})
+    if (matchedProperty?.images?.length > 0) setIsImages(true);
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]);
 
   return (
     <>
@@ -92,23 +92,22 @@ function SinglePropertyPage() {
           <img
             src={property.img}
             alt="property Image"
-            className={`${
-              isImages
-                ? "sm:w-96 md:w-[480px] lg:w-[700px] 2xl:w-[850px]"
-                : "mx-auto"
-            } sm:h-[500px] object-cover flex-shrink-0 `}
+            className={`${isImages
+              ? "sm:w-96 md:w-[480px] lg:w-[700px] 2xl:w-[850px]"
+              : "mx-auto"
+              } sm:h-[500px] object-cover flex-shrink-0 `}
           />
           {isImages && (
             <div className="hidden sm:w-full sm:h-auto sm:flex-shrink-0 sm:flex-1 sm:flex sm:flex-col">
               <img
-                src={property.images[0]}
-                alt=""
+                src={property?.images[0]}
+                alt="property image"
                 className="w-full bg-gray-900 h-[50%] object-cover"
               />
               <div className="w-full h-[50%] flex justify-center items-center relative">
                 <img
-                  src={property.images[1]}
-                  alt=""
+                  src={property?.images[1]}
+                  alt="property image"
                   className="w-full h-full bg-blue-300 object-cover"
                 />
                 <div className="w-full h-full bg-black inset-0 absolute opacity-50"></div>
@@ -160,7 +159,7 @@ function SinglePropertyPage() {
                 Why <span className="text-[#1095D0]">{property.title}</span> ?
               </h1>
               <ul className="list-inside list-disc text-xs sm:text-sm mt-5 lg:text-base">
-                {property.details.map((item, index) => (
+                {property?.details?.map((item, index) => (
                   <li key={index} className="mb-2">
                     {item}
                   </li>
@@ -203,8 +202,8 @@ function SinglePropertyPage() {
                         <div className="text-xs md:text-sm flex justify-between gap-4">
                           <span className="w-[70%]">{place.name}</span>
                           <span className="flex flex-col font-bold"><p>{place.distance}</p>
-                          <p>{place.time}</p></span>
-                          
+                            <p>{place.time}</p></span>
+
                         </div>
                       </div>
                     ))
@@ -292,7 +291,7 @@ function SinglePropertyPage() {
                   className="w-full h-full flex overflow-x-scroll gap-2"
                   style={{ scrollbarWidth: "none" }}
                 >
-                  {property.images.length > 0 &&
+                  {property?.images?.length > 0 &&
                     property.images.map((image, index) => (
                       <img
                         key={index}

@@ -18,7 +18,7 @@ function App() {
         <Route path="/properties" element={<Properties />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/single-property" element={<SinglePropertyPage />} />
+        <Route path="/single-property/:id" element={<SinglePropertyPage />} />
       </Routes>
       <Footer />
     </Router>
