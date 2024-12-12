@@ -24,7 +24,11 @@ const FeaturedProperties = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center  md:gap-20">
           {propertyData.slice(0, 29).map((property, index) => (
             <Link
-              to={`/single-property/${property.id}`}
+            to={
+              property.link?.includes("https://teja-build-tech.vercel.app/properties")
+                ? property.link
+                : `/single-property/${property.id}`
+            }
               key={index}
               className="bg-white rounded-2xl shadow-lg border md:hover:shadow-2xl duration-500 border-[#ACACAC]  w-[320px] h-[495px]"
             >
@@ -177,7 +181,11 @@ const FeaturedProperties = () => {
           ))}
           {propertyData.slice(30).map((property, index) => (
             <Link
-              to={`/single-property/${property.id}`}
+            to={
+              property.link?.includes("https://teja-build-tech.vercel.app/properties")
+                ? property.link
+                : `/single-property/${property.id}`
+            }
               key={index}
               className="bg-white rounded-2xl shadow-lg border md:hover:shadow-2xl duration-500 border-[#ACACAC]  w-[320px] h-[495px]"
             >
@@ -188,16 +196,13 @@ const FeaturedProperties = () => {
                   className="w-full  object-cover rounded-2xl  h-[300px] bg-gray-300"
                 />
               </div>
-
               <div className=""></div>
-
               {/* Property Details */}
               <div className="p-4 ">
                 <h3 className="text-lg font-semibold h-[50px]">
                   {property.title}
                 </h3>
                 <p className="text-gray-500">{property.location}</p>
-
                 {/* Property Info */}
                 <div className="flex items-center  text-gray-500 text-sm mt-2 border-t border-gray-400 border-b py-1">
                   <span className="flex items-center">

@@ -88,7 +88,11 @@ const PropertyListing = () => {
         {filteredProperties.length > 0 ? (
           filteredProperties.map((property) => (
             <Link
-              to={`/single-property/${property.id}`}
+            to={
+              property.link?.includes("https://teja-build-tech.vercel.app/properties")
+                ? property.link
+                : `/single-property/${property.id}`
+            }
               key={property.id}
               className="bg-white rounded-2xl shadow-lg border md:hover:shadow-2xl border-[#ACACAC]  w-[320px] h-[510px]"
             >
