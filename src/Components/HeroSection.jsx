@@ -120,7 +120,7 @@ const HeroSection = () => {
   }, []);
   return (
     <>
-      <section className="w-full h-[450px] md:h-[600px] mt-4 md:mb-4">
+      <section className="w-full h-[450px] md:h-[300px] mt-4 md:mb-10">
         <AutoSlidingCarousel banners={banners} className="rounded-3xl" />
       </section>
       <div className="hidden md:grid grid-cols-6 grid-rows-8 gap-8 pb-10  mb-10 font-satoshi overflow-x-hidden ">

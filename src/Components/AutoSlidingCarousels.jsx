@@ -109,9 +109,9 @@ const AutoSlidingCarousel = () => {
             className="w-full flex-shrink-0 rounded-3xl"
             style={{ width: `${slideWidth}%` }}
           >
-            <span className="rounded-3xl w-full h-[300px] md:h-[500px] mt-2 md:mt-6 mb-10 relative">
+            <span className="rounded-3xl w-full h-[300px] md:h-[290px] mt-2 md:mt-6 mb-10 relative">
               <div
-                className="bg-gray-300 container min-w-full rounded-[30px] h-[500px] md:h-[500px] mb-10 p-4 "
+                className="bg-gray-300 container min-w-full rounded-[30px] h-[500px] md:h-[290px] mb-10 p-4 "
                 style={{
                   backgroundImage: `url(${property.img})`,
                 }}
