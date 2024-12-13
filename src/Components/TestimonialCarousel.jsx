@@ -132,7 +132,7 @@ const TestimonialCarousel = () => {
                   >
                     <div className="flex h-[250px]">
                       <div className="w-1/2 flex flex-col justify-between">
-                        <p className="w-[90%] md:w-4/5 text-sm md:text-lg text-gray-700">{testimonial.text}</p>
+                        <p className="w-[90%] md:w-4/5 text-sm lg:text-base text-gray-700">{testimonial.text}</p>
 
                         {/* Image placeholder */}
                         <div className="flex flex-col">

@@ -35,11 +35,11 @@ const Contact = () => {
   }, []);
   return (
     <>
-      <div className="px-4 md:px-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 my-10 md:my-10 font-montserrat">
+      <div className="px-4 md:px-20 flex flex-col md:flex-row items-center gap-10 my-10 md:my-10 font-montserrat">
         <div className="w-full md:w-[45%] h-[450px] md:h-[680px] flex flex-col items-center md:items-start bg-[#1095D0] rounded-3xl gap-10 md:gap-40 p-8">
           <div className="flex flex-col gap-3 text-white mt-10">
-            <h1 className="font-bold text-2xl md:text-4xl">Contact Information</h1>
-            <p className="text-base md:text-2xl">Say something to start a live chat!</p>
+            <h1 className="font-bold text-2xl lg:text-4xl">Contact Information</h1>
+            <p className="text-base lg:text-2xl">Say something to start a live chat!</p>
           </div>
           <div className="flex flex-col gap-6 md:gap-12">
             <div className="flex gap-4 items-center text-white font-bold">
@@ -61,7 +61,7 @@ const Contact = () => {
                   />
                 </svg>
               </span>
-              <span className="text-base md:text-xl">  (+91) 9654987500 </span>
+              <span className="text-base lg:text-xl">  (+91) 9654987500 </span>
             </div>
             <div className="flex gap-4 items-center text-white font-bold">
               <span>
@@ -78,7 +78,7 @@ const Contact = () => {
                   />
                 </svg>
               </span>
-              <span className="text-base md:text-xl">Kuldeepsingh@kdsure.com</span>
+              <span className="text-base lg:text-xl">Kuldeepsingh@kdsure.com</span>
             </div>
             <div className="flex gap-4 items-center text-white font-bold">
               <span>
@@ -95,7 +95,7 @@ const Contact = () => {
                   />
                 </svg>
               </span>
-              <span className="text-base md:text-xl">
+              <span className="text-base lg:text-xl">
               FF-20, French Arcade, Greater Noida West,
               Gautam Buddh Nagar-201306, Uttar Pradesh
               </span>

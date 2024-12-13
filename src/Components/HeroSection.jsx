@@ -30,7 +30,7 @@ function UpwardsCarousel({ items }) {
 
   }, [items.length])
 
-  
+
 
   return (
     <div className="relative w-full h-16 md:h-24 overflow-hidden">
@@ -123,7 +123,7 @@ const HeroSection = () => {
       <section className="w-full h-[450px] md:h-[600px] mt-4 md:mb-4">
         <AutoSlidingCarousel banners={banners} className="rounded-3xl" />
       </section>
-      <div className="hidden md:grid grid-cols-6 grid-rows-8 gap-8 pb-10  mb-10 font-satoshi  ">
+      <div className="hidden md:grid grid-cols-6 grid-rows-8 gap-8 pb-10  mb-10 font-satoshi overflow-x-hidden ">
         {/* Discover Your Dream Home Text */}
         <div className="col-span-4 row-span-3 row-start-1 col-start-1 flex flex-col justify-center">
           <h1 className="text-7xl font-bold leading-tight">
@@ -138,9 +138,8 @@ const HeroSection = () => {
 
         {/* Square Element */}
         <div ref={imageRef1}
-      className={`col-span-2 row-span-5 row-start-4 row-end-9 rounded-3xl ${
-        isVisible1 ? "animate-fadeInLeft" : "opacity-0"
-      } transition-opacity duration-500`}>
+          className={`col-span-2 row-span-5 row-start-4 row-end-9 rounded-3xl ${isVisible1 ? "animate-fadeInLeft" : "opacity-0"
+            } transition-opacity duration-500`}>
           <img src={img1} alt="" className="w-full h-full object-cover rounded-3xl" />
         </div>
 
@@ -175,10 +174,9 @@ const HeroSection = () => {
         </div>
 
         {/* Big Rectangular Area */}
-        <div  ref={imageRef2}
-        className={`col-start-5 row-start-1 col-span-2 row-span-6 bg-gray-300 rounded-3xl ${
-          isVisible2 ? "animate-fadeInRight" : "opacity-0"
-        } transition-opacity duration-500`}>
+        <div ref={imageRef2}
+          className={`col-start-5 row-start-1 col-span-2 row-span-6 bg-gray-300 rounded-3xl ${isVisible2 ? "animate-fadeInRight" : "opacity-0"
+            } transition-opacity duration-500`}>
           <img src={img2} alt="" className="w-full h-full object-cover rounded-3xl" />
         </div>
 

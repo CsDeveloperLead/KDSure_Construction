@@ -21,7 +21,7 @@ const FeaturedProperties = () => {
         </Link>
       </div>
       <div className="">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center  md:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10 place-items-center  md:gap-20">
           {propertyData.slice(0, 29).map((property, index) => (
             <Link
             to={

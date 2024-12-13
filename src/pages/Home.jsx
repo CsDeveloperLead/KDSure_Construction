@@ -26,34 +26,34 @@ const Home = () => {
         }}
       >
         <div className=" bg-[#292929] bg-opacity-95 w-full md:w-1/2 h-full rounded-3xl p-8 flex flex-col gap-4">
-          <h1 className="text-[#1095d0] text-3xl md:text-6xl font-bold text-center md:text-start">Royal Court</h1>
-          <p className="text-white text-base md:text-4xl font-bold text-center md:text-start">Sector-16 B</p>
+          <h1 className="text-[#1095d0] text-3xl lg:text-6xl font-bold text-center md:text-start">Royal Court</h1>
+          <p className="text-white text-base lg:text-4xl font-bold text-center md:text-start">Sector-16 B</p>
           <div className="md:mt-10 flex flex-col items-center md:items-start space-y-2 md:space-y-6">
             <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">
-            6.81 K - ₹9.15 K/sq.ft
+              6.81 K - ₹9.15 K/sq.ft
             </p>
-            <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">1230-1855 sq.ft</p>
-            <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">2/3 BHK</p>
-            <span className="flex justify-between">
-              <Link  to={"https://wa.link/xyu1c6"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden "
-            >
+            <p className="text-white text-base lg:text-xl font-boldtext-center md:text-start">1230-1855 sq.ft</p>
+            <p className="text-white text-base lg:text-xl font-boldtext-center md:text-start">2/3 BHK</p>
+            <div className="flex w-full justify-between lg:justify-start lg:gap-4 xl:gap-6">
+              <Link to={"https://wa.link/xyu1c6"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden "
+              >
                 <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
 
-              <button className="bg-[#1095d0] relative z-10 text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
-                Get Quote
-              </button>{" "}
+                <button className="bg-[#1095d0] relative z-10 text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
+                  Get Quote
+                </button>{" "}
               </Link>
               <Link to="/properties" className="hidden md:block relative group rounded-full p-1 bg-gradient-to-r from-white to-[#1095D0] overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-white to-[#1095D0] animate-gradient-flow"></div>
 
                 <button className="bg-[#1095d0] relative z-10 text-sm md:text-base py-1 md:py-2 rounded-3xl px-4 md:px-8 text-white font-bold flex justify-center items-center">
                   More Properties
                 </button>
               </Link>
-            </span>
+            </div>
           </div>
         </div>
       </div>

@@ -111,28 +111,28 @@ const AutoSlidingCarousel = () => {
           >
             <span className="rounded-3xl w-full h-[300px] md:h-[500px] mt-2 md:mt-6 mb-10 relative">
               <div
-                className="bg-gray-300 container w-full rounded-[30px] h-[500px] md:h-[500px] mb-10 p-4 "
+                className="bg-gray-300 container min-w-full rounded-[30px] h-[500px] md:h-[500px] mb-10 p-4 "
                 style={{
                   backgroundImage: `url(${property.img})`,
                 }}
               >
                 <div className="flex items-end md:justify-between h-full">
-                  <div className="bg-[#292929] bg-opacity-95 w-full md:w-[65%] h-[55%] md:h-[50%]  rounded-3xl p-8  flex  md:justify-between md:items-end    ">
+                  <div className="bg-[#292929] bg-opacity-95 w-full md:w-[65%] h-[55%] md:h-auto  rounded-3xl p-8  flex  md:justify-between md:items-end    ">
                     <div className="w-full flex flex-col items-center md:items-start justify-center md:justify-start gap-2 md:gap-0  ">
-                      <h1 className="text-[#1095d0] hidden md:block text-2xl md:text-3xl font-bold text-center md:text-start">
+                      <h1 className="text-[#1095d0] hidden md:block text-2xl lg:text-3xl font-bold text-center md:text-start">
                         {property.title}
                       </h1>
-                      <p className="text-white text-base md:text-2xl font-bold text-center md:text-start my-1">
+                      <p className="text-white text-base lg:text-2xl font-bold text-center md:text-start my-1">
                         {property.location}
                       </p>
                       <div className=" space-y-2 md:space-y-2">
-                        <p className="text-white text-base md:text-xl font-bold text-center md:text-start">
+                        <p className="text-white text-base lg:text-xl font-bold text-center md:text-start">
                           {property.price}
                         </p>
-                        <p className="text-white text-base md:text-xl font-bold text-center md:text-start">
+                        <p className="text-white text-base lg:text-xl font-bold text-center md:text-start">
                           {property.area}
                         </p>
-                        <p className="text-white text-base md:text-xl font-bold text-center md:text-start">
+                        <p className="text-white text-base lg:text-xl font-bold text-center md:text-start">
                           {property.config}
                         </p>
                         <div className="w-full">
