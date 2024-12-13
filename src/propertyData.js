@@ -292,6 +292,7 @@ const propertyData = [
     possesions: "Oct, 2028",
     type: "Apartment",
     img: img1,
+    mapLink:"https://maps.app.goo.gl/iU9goQmoN7y1mtpv7",
     link: "https://wa.link/z5k6pq",
     details: [
       "ULTRA LUXURY LIVING : Massive decks & Wrap around balconies",
@@ -360,6 +361,7 @@ const propertyData = [
     possesions: "N/A",
     type: "Apartment",
     img: img2,
+    mapLink:"https://maps.app.goo.gl/gL5CEj3zMMK24sj2A",
     link: "https://wa.link/poia08",
     details: [
       "Project designed by renowned architect Hafeez Contractor",
@@ -428,6 +430,7 @@ const propertyData = [
     possesions: "Jan, 2029",
     img: img3,
     type: "Apartment",
+    mapLink:"https://maps.app.goo.gl/psCZ5uR4jfo9s2NaA",
     link: "https://wa.link/2yeip0", // Dont have details
     details: [
       "Project designed by renowned architect Hafeez Contractor",
@@ -496,6 +499,7 @@ const propertyData = [
     config: "3/4 BHK",
     type: "Apartment",
     possesions: "June, 2029",
+    mapLink:"https://maps.app.goo.gl/KBhRAuvUgLRR7VnN6",
     link: "https://wa.link/ciodxs",
     details: [
       "Three-side open plot having a combined face of 350 meters",
@@ -562,6 +566,7 @@ const propertyData = [
     config: "3/3.5/4 BHK",
     possesions: "Feb, 2029",
     type: "Apartment",
+    mapLink:"https://maps.app.goo.gl/w3ctDuHs1jJwJzq29",
     link: "https://wa.link/ksx60s",
     details: [
       "Convenient 10-minute drive to the FNG Expressway",
@@ -629,6 +634,7 @@ const propertyData = [
     possesions: "Ready to Move",
     type: "Apartment",
     link: "https://wa.link/7ml3ww",
+    mapLink:"https://maps.app.goo.gl/JziHjfAFyZHL8BWs6",
     details: [
       "Pollution free enviornment for healthy life style",
       "3 open side properties, pollution free",
@@ -695,6 +701,7 @@ const propertyData = [
     possesions: "Sep, 2027",
     type: "Apartment",
     link: "https://wa.link/ebk54b",
+    mapLink:"https://maps.app.goo.gl/N5umMuP9AnfSixKe7",
     details: [
       "Earthquake Resistant Structure",
       "Amenities include library, cricket pitch, skating rink, basketball court, badminton court, cycling & jogging track.",
@@ -761,6 +768,7 @@ const propertyData = [
     possesions: "Jan, 2029",
     type: "Apartment",
     link: "https://wa.link/sqa2kh",
+    mapLink:"https://maps.app.goo.gl/cZkgiSR3Zviqd3q98",
     details: [
       "Irish Platinum is the legacy project of Irish Group, after the land mark delivery of Irish Pearls, which is a state of the art project, which has redefined the standard of luxury living with twin skyscrapers , shining bright in Noida Extension's sky line.",
       "Now Introducing 'Irish Platinum' , which is a step ahead of already defined luxury living.",
@@ -826,6 +834,7 @@ const propertyData = [
     possesions: "May, 2025",
     type: "Apartment",
     link: "https://wa.link/i464qb",
+    mapLink:"https://maps.app.goo.gl/zgEu3ywPJuhDbBzb6",
     details: [
       "Design for ample sunlight within the complex and in most of the units",
       "Each tower has four units per floor mostly with corner units",
@@ -893,6 +902,7 @@ const propertyData = [
     possesions: "June, 2027",
     type: "Apartment",
     link: "https://wa.link/wo7ijg",
+    mapLink:"https://maps.app.goo.gl/4BT8az3emrLdPAcx8",
     details: [
       "Architect Hafeez Contractor has designed the project.",
       "The project is constructed using MIVAN technology.",
@@ -960,6 +970,7 @@ const propertyData = [
     possesions: "Mar, 2022",
     type: "Apartment",
     link: "https://wa.link/5rd0jv",
+    mapLink:"https://maps.app.goo.gl/sxtnEXYViS255vbo6",
     details: [
       "2 state-of-the art 3 storied magnificent ac club of approx.23000sq.ft.(2136.77sq.mtr.) each",
       "BLS World School is 1.7 KM away",
@@ -1028,6 +1039,7 @@ const propertyData = [
     possesions: "Mar, 2026",
     type: "Apartment",
     link: "https://wa.link/6owcfd", // Dont have details
+    mapLink:"https://maps.app.goo.gl/mriXeUrKisCCBVte7",
     details: [
       "2 state-of-the art 3 storied magnificent ac club of approx.23000sq.ft.(2136.77sq.mtr.) each",
       "BLS World School is 1.7 KM away",
@@ -1096,6 +1108,7 @@ const propertyData = [
     possesions: "Dec, 2028",
     type: "Apartment",
     link: "https://wa.link/vhsenb",
+    mapLink:"https://maps.app.goo.gl/gjjbCfmVpMc2Wnmn8",
     details: [
       "3/4 BHK Ultra Luxury Project",
       "RERA: UPRERAPRJ916631/02/2024",
@@ -1164,6 +1177,7 @@ const propertyData = [
     possesions: "Ready to Move",
     type: "Apartment",
     link: "https://wa.link/8ug2wu",
+    mapLink:"https://maps.app.goo.gl/k2e8jKu73YfvoXrw9",
     fullLocation: "GH-07B, Sector 16B Noida Extension, Greater Noida",
     details: [
       "Availability of 80% open space.",
@@ -1230,6 +1244,7 @@ const propertyData = [
     possesions: "Ready to Move",
     type: "Apartment",
     link: "https://wa.link/bv6pm0",
+    mapLink:"https://maps.app.goo.gl/T84kL77LUicpL72X9",
     fullLocation: "GH 05A, Tech Zone 4, Greater Noida",
     details: [
       "Anand Hospital is just 4.3 kms away.",
@@ -1299,6 +1314,7 @@ const propertyData = [
     possesions: "May, 2018",
     type: "Apartment",
     link: "https://wa.link/set9wv",
+    mapLink:"https://maps.app.goo.gl/dSV2rKXbnaMdkspY8",
     fullLocation:
       "Plot No. GH-01, Sector 16B, Noida Extension, Greater Noida, Uttar Pradesh 201301",
     details: [
@@ -1358,7 +1374,7 @@ const propertyData = [
   },
   {
     id: 17,
-    title: "NIRALE ASPIRE",
+    title: "NIRALA ASPIRE",
     location: "Sector 16B",
     img: img17,
     price: "6.81 K - ₹9.15 K/sq.ft",
@@ -1367,6 +1383,7 @@ const propertyData = [
     possesions: "Ready to Move",
     type: "Apartment",
     link: "https://wa.link/f3h4qv",
+    mapLink:"https://maps.app.goo.gl/RWb83Jb2AbcVD13F9",
     fullLocation: "GH-03, Sector 16 Noida Extension, Greater Noida",
     details: [
       "Beautifully theme Based Landscape Park/Garden with water, fountain, and jogging track",
@@ -1431,6 +1448,7 @@ const propertyData = [
     possesions: "Ready to Move",
     type: "Apartment",
     link: "https://wa.link/db911e",
+    mapLink:"https://maps.app.goo.gl/GenTCjA2ZKek7zma7",
     fullLocation: "Plot No 1, Sector 1 Noida Extension, Greater Noida",
     details: [
       "Nearby hospitals include- Swastha Rekha(1.0 km), Yatharth Super speciality Hospital (1.9 km) and Arogya Hospital (3.9 km)",
@@ -1498,6 +1516,7 @@ const propertyData = [
     type: "Apartment",
     possesions: "Ready to Move",
     link: "https://wa.link/xyu1c6",
+    mapLink:"https://maps.app.goo.gl/rgKKwQDEgdxBNQ4U6",
     fullLocation: "GH 4C, Sector 16 Noida Extension, Greater Noida",
     details: [
       "Innovative design, luxurious properties",
@@ -1565,6 +1584,7 @@ const propertyData = [
     type: "Apartment",
     possesions: "Ready to Move",
     link: "https://wa.link/bw6zhk",
+    mapLink:"https://maps.app.goo.gl/kXyZBdqhJsy4b6yS8",
     fullLocation: "GH 05A, Sector Techzone 4, Greater Noida",
     details: [
       "Only 25% covered area and 75% open space",
@@ -1631,6 +1651,7 @@ const propertyData = [
     config: "2/3 BHK",
     possesions: "Ready to Move",
     type: "Apartment",
+    mapLink:"https://maps.app.goo.gl/L6Lz2xpVK4Gg6YxN9",
     fullLocation:
       "GH-10A, Sector - Techzone IV, Greater Noida, Uttar Pradesh 201301",
     details: [
@@ -1699,6 +1720,7 @@ const propertyData = [
     config: "2/3 BHK",
     type: "Apartment",
     possesions: "N/A",
+    mapLink:"https://maps.app.goo.gl/rtQGamar3d84osRh9",
     details: [
       "Innovative design, luxurious properties",
       "Natural pond, sea facing",
@@ -1712,6 +1734,7 @@ const propertyData = [
     locality: [],
   },
   {
+    id: 23,
     title: "AMRAPALI LEISURE PARK",
     location: "Techzone 4",
     img: img24,
@@ -1721,6 +1744,7 @@ const propertyData = [
     possesions: "Ready to Move",
     type: "Apartment",
     link: "https://wa.link/rux4we",
+    mapLink:"https://maps.app.goo.gl/RUZu9w4MVFo3bbEJ8",
     fullLocation: "Techzone 4, Greater Noida",
     details: [
       "Located 1.3 km from Ryan International School, Noida Extention, Noida - CBSE",
@@ -1786,6 +1810,7 @@ const propertyData = [
     config: "2/2.5/3 BHK",
     type: "Apartment",
     possesions: "Ready to Move",
+    mapLink:"https://maps.app.goo.gl/oZC5ioYH3YDtJGr46",
     link: "https://wa.link/252xg4",
     fullLocation: "GH 01, Sector-2, Techzone 4, Greater Noida",
     details: [
@@ -1853,6 +1878,7 @@ const propertyData = [
     possesions: "June, 2018",
     type: "Apartment",
     link: "https://wa.link/ji3hbs",
+    mapLink:"https://maps.app.goo.gl/zBrRoXmPtGitKEMT8",
     fullLocation:
       "Opposite Wipro Sector Delta 1, Sector- PI, PI, Greater Noida",
     details: [
@@ -1912,6 +1938,7 @@ const propertyData = [
     possesions: "Ready to Move",
     type: "Apartment",
     link: "https://wa.link/y3qlqt",
+    mapLink:"https://maps.app.goo.gl/VaU2f5G9o9Yz8XzV8",
     fullLocation: "GH 05, Techzone-4, Greater Noida",
     details: [
       "3 open side properties, luxurious properties",
@@ -1975,6 +2002,7 @@ const propertyData = [
     possesions: "Ready to Move",
     type: "Apartment",
     link: "https://wa.link/6uycyq",
+    mapLink:"https://maps.app.goo.gl/BT5Y36xgk12beiKm7",
     fullLocation: "GH 05, Techzone-4, Greater Noida",
     details: [
       "Ryan International School, Noida Extention is just 300 m away.",
@@ -2035,6 +2063,7 @@ const propertyData = [
     possesions: "Ready to Move",
     type: "Apartment",
     link: "https://wa.link/ve6fz3",
+    mapLink:"https://maps.app.goo.gl/oL63u3CZta9763F9A",
     fullLocation: "Plot No. GH-05, Techzone- 4, Greater Noida",
     details: [
       "7 Km from Fortis Hospital.",
@@ -2098,6 +2127,7 @@ const propertyData = [
     possesions: "Dec, 2022",
     type: "Apartment",
     link: "https://wa.link/ohewl8",
+    mapLink:"https://maps.app.goo.gl/8eQu34yemB455zGY7",
     fullLocation: "Unit No 2, Plot No 21, Techzone 4, Greater Noida",
     details: [
       "Ryan International School, Noida Extention is just 800 m away.",

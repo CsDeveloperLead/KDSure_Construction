@@ -28,7 +28,7 @@ const Home = () => {
         <div className=" bg-[#292929] bg-opacity-95 w-full md:w-1/2 h-full rounded-3xl p-8 flex flex-col gap-4">
           <h1 className="text-[#1095d0] text-3xl lg:text-6xl font-bold text-center md:text-start">Royal Court</h1>
           <p className="text-white text-base lg:text-4xl font-bold text-center md:text-start">Sector-16 B</p>
-          <div className="md:mt-10 flex flex-col items-center md:items-start space-y-2 md:space-y-6">
+          <div className="md:mt-10 flex flex-col items-center md:items-start space-y-2 md:space-y-4">
             <p className="text-white text-base md:text-xl font-boldtext-center md:text-start">
               6.81 K - ₹9.15 K/sq.ft
             </p>

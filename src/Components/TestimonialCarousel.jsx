@@ -4,6 +4,12 @@ import test1 from "../assets/test1.jpg";
 import test2 from "../assets/test2.jpg";
 import test3 from "../assets/test3.jpg";
 import test4 from "../assets/test4.jpg";
+import test5 from "../assets/test5.avif";
+import test6 from "../assets/test6.avif";
+import test7 from "../assets/test7.avif";
+import test8 from "../assets/test8.avif";
+import test9 from "../assets/test9.avif";
+import test10 from "../assets/test10.avif";
 
 const testimonials = [
   {
@@ -39,36 +45,42 @@ const testimonials = [
     text: "KD Realtors made my dream of owning a villa come true. The property was exactly what I was looking for, and they even helped with the financing process!",
     name: "Priyanka Sharma",
     rating: 5,
+    img: test5,
   },
   {
     id: 6,
     text: "Industrial plot ka search karte waqt mujhe KD Realtors ke baare me pata chala. Professional team, smooth paperwork, aur reasonable pricing ne meri deal perfect banayi.",
     name: "Siddharth Mehta",
     rating: 5,
+    img: test6,
   },
   {
     id: 7,
     text: "If you are looking for prime luxury plots, KD Realtors is the go-to place. Their team provided excellent service and showed us properties in top-notch locations.",
     name: "Tanya Kapoor",
     rating: 5,
+    img: test7,
   },
   {
     id: 8,
     text: "Mujhe ek gated community me villa chahiye tha, aur KD Realtors ki team ne mujhe ek aise villa ka option diya jo mere budget aur expectations ko pura karta hai.",
     name: "Ravi Verma",
     rating: 4.8,
+    img: test8,
   },
   {
     id: 9,
     text: "KD Realtors ki wajah se main ek industrial plot secure kar paaya in a prime area. Unka guidance aur assistance paperwork ke har step me tha. Highly professional!",
     name: "Rajeev Singh",
     rating: 5,
+    img: test9,
   },
   {
     id: 10,
     text: "Looking for a luxury plot was never this easy! KD Realtors provided us with multiple options, and we are so happy with our purchase. Thank you for your excellent service!",
     name: "Meenal Ahuja",
     rating: 5,
+    img: test10,
   },
 ];
 

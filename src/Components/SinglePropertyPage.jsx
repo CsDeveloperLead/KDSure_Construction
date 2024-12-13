@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { PiBoundingBoxDuotone } from "react-icons/pi";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoResizeSharp } from "react-icons/io5";
 import { RiMoneyRupeeCircleFill } from "react-icons/ri";
-import { IoShareSocialOutline } from "react-icons/io5";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 import propertyData from "../propertyData";
@@ -217,9 +216,9 @@ function SinglePropertyPage() {
               </div>
 
               <div className="w-full h-auto flex flex-col justify-center items-center">
-                <button className="text-[#1095D0] font-medium">
+                <Link to={property.mapLink} target="_blank" className="text-[#1095D0] font-medium cursor-pointer">
                   View more on Maps
-                </button>
+                </Link>
               </div>
             </div>
             <div className="w-full h-auto flex flex-col">
@@ -271,7 +270,6 @@ function SinglePropertyPage() {
               </div>
               <div className="w-full h-auto flex mt-7 justify-between sm:justify-center items-center sm:gap-5 md:mt-14 md:gap-10">
                 <button className="">
-                 
                   <CopyLinkButton link={`https://kdsure.com/single-property/${id}`} />
                 </button>
                 <Link
