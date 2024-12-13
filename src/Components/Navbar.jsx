@@ -56,9 +56,9 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-gray-500 focus:outline-none">
+        <span onClick={toggleMenu} className="text-gray-500 focus:outline-none">
           {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-        </button>
+        </span>
       </div>
 
       {/* Mobile Menu */}
