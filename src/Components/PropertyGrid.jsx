@@ -81,7 +81,7 @@ const PropertyGrid = () => {
            target="_blank"
            rel="noopener noreferrer"
             key={property.id}
-            className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end hover:scale-110 border-[#1095D0] relative "
+            className=" rounded-3xl p-8 h-[450px] border flex flex-col justify-end hover:scale-110 hover:my-4 border-[#1095D0] relative "
             style={{
               backgroundImage: `url(${property.img})`,
               backgroundSize: "cover",

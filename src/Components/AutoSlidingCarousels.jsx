@@ -117,9 +117,9 @@ const AutoSlidingCarousel = () => {
                 }}
               >
                 <div className="flex items-end md:justify-between h-full">
-                  <div className="bg-[#292929] bg-opacity-95 w-full md:w-[65%] h-[55%] md:h-auto  rounded-3xl p-8  flex  md:justify-between md:items-end    ">
+                  <div className="bg-[#292929] bg-opacity-95 w-full md:w-[65%] h-[60%] md:h-auto  rounded-3xl p-8  flex  md:justify-between md:items-end    ">
                     <div className="w-full flex flex-col items-center md:items-start justify-center md:justify-start gap-2 md:gap-0  ">
-                      <h1 className="text-[#1095d0] hidden md:block text-2xl lg:text-3xl font-bold text-center md:text-start">
+                      <h1 className="text-[#1095d0] text-xl lg:text-3xl font-bold text-center md:text-start">
                         {property.title}
                       </h1>
                       <p className="text-white text-base lg:text-2xl font-bold text-center md:text-start my-1">

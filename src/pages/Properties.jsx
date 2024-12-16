@@ -32,18 +32,18 @@ const Properties = () => {
   };
 
   return (
-    <div className="mx-4 md:mx-10">
+    <div className="mx-4 md:mx-10 ">
       <div className="w-full mt-10 rounded-[30px]">
         <div
-          className="relative my-8 rounded-3xl max-md:rounded-none overflow-hidden"
+          className="relative my-8 rounded-3xl  overflow-hidden p-1 md:p-0"
           style={{
             backgroundImage: `url(${propertyData[currentIndex]?.img || ""})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="flex items-center p-1 md:p-8">
-            <div className="w-full md:w-full bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-2xl max-sm:rounded-lg">
+          <div className="flex items-center p-1 md:p-8 rounded-3xl">
+            <div className="w-full md:w-full bg-white bg-opacity-10 backdrop-blur-lg p-8 rounded-3xl">
               <h2 className="text-3xl font-bold mb-4">
                 {propertyData[currentIndex]?.title || "No title available"}
               </h2>
