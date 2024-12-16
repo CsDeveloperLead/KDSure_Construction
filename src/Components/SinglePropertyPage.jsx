@@ -55,7 +55,7 @@ function SinglePropertyPage() {
 
   return (
     <>
-      <div className="w-full h-auto flex flex-col px-5 sm:px-7 md:px-12 mb-20 pt-7 xl:px-40">
+      <div className="w-full h-auto flex flex-col px-5 sm:px-7 md:px-12 pt-7 xl:px-40">
         <div className="w-full h-auto flex flex-col">
           <div className="w-full h-auto flex flex-col justify-between gap-2 sm:flex-row sm:gap-0 sm:items-center">
             <h1 className="text-xl font-bold text-[#1095D0] lg:text-3xl 2xl:text-4xl">
@@ -79,14 +79,14 @@ function SinglePropertyPage() {
               to={property.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-auto h-auto px-5 py-2 bg-[#1095D0] text-white font-semibold rounded-md cursor-pointer hover:bg-[#43b1e0] md:px-6 md:py-3"
+              className="w-36 h-auto px-5 py-2 bg-[#1095D0] text-white font-semibold rounded-md sm:w-auto cursor-pointer hover:bg-[#43b1e0] md:px-6 md:py-3"
             >
               Contact Now
             </Link>
           </div>
         </div>
         <div
-          className="w-full sm:h-[500px] my-5 flex justify-center cursor-pointer bg-gray-200 lg:my-10"
+          className="w-full sm:h-[500px] my-5 flex justify-center cursor-pointer relative bg-gray-200 lg:my-10"
           onClick={() => setImagePopUp(true)}
         >
           <img
@@ -97,6 +97,7 @@ function SinglePropertyPage() {
               : "mx-auto"
               } sm:h-[500px] object-cover flex-shrink-0 `}
           />
+          <span className="absolute bottom-5 right-4 py-3 px-3.5 shadow-xl bg-white rounded-full">+{property?.images?.length}</span>
           {isImages && (
             <div className="hidden sm:w-full sm:h-auto sm:flex-shrink-0 sm:flex-1 sm:flex sm:flex-col">
               <img
@@ -166,7 +167,7 @@ function SinglePropertyPage() {
                 ))}
               </ul>
             </div>
-            <div className="w-full h-auto flex flex-col my-6 px-2 gap-5 lg:my-10">
+            <div className="w-full h-auto flex flex-col my-8 px-2 gap-5 lg:my-10">
               <div className="w-full h-auto flex gap-5">
                 <div className="w-auto h-auto flex justify-center items-center flex-shrink-0">
                   <FaMapLocationDot size={25} className="text-[#1095D0]" />
@@ -282,7 +283,7 @@ function SinglePropertyPage() {
                 </Link>
               </div>
             </div>
-            <div className="w-full h-auto flex flex-col">
+            <div className="w-full h-auto flex flex-col my-8">
               <h1 className="text-lg md:text-xl font-bold">Project Brochure</h1>
               <hr className="my-3" />
               <div className="w-full h-40 flex justify-center items-center relative md:h-60">
