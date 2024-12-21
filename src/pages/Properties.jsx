@@ -74,13 +74,25 @@ const Properties = () => {
 
           {/* Navigation Buttons */}
           <button
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+            className="md:hidden block absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+            onClick={handlePrev}
+          >
+            <ChevronLeft size={18} />
+          </button>
+          <button
+            className="md:hidden block absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+            onClick={handleNext}
+          >
+            <ChevronRight size={18} />
+          </button>
+          <button
+            className="hidden md:block absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
             onClick={handlePrev}
           >
             <ChevronLeft size={24} />
           </button>
           <button
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+            className="hidden md:block absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
             onClick={handleNext}
           >
             <ChevronRight size={24} />

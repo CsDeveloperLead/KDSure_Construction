@@ -107,10 +107,8 @@ const Contact = () => {
           <h1 className="text-2xl md:text-4xl font-bold">
             Leave a Message For Us
           </h1>
-          <p className="text-[#6e6e6e] text-sm md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut
-          </p>
+          <p className="text-[#6e6e6e] text-sm md:text-base my-1">
+          Contact us today to find your dream home! Whether it's apartments, houses, or commercial spaces, we're here to help.          </p>
           <form ref={form} onSubmit={sendEmail}>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col md:flex-row gap-4 md:gap-10 justify-between">
