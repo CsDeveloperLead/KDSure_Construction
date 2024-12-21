@@ -35,6 +35,9 @@ import img35 from "./assets/35.png";
 import img36 from "./assets/36.png";
 import img37 from "./assets/37.png";
 import img38 from "./assets/38.png";
+import crcimg from "./assets/crc.png";
+import futureestate from "./assets/futureestate.png";
+
 
 //Brochure pdf
 import Property1 from "./assets/brochure/AceHaneiBrochure.pdf";
@@ -67,6 +70,7 @@ import Property27 from "./assets/brochure/AmrapaliParkLowRiseBrochure.pdf";
 import Property28 from "./assets/brochure/TerraceHomesBrochure.pdf";
 import Property29 from "./assets/brochure/AmrapaliDreamValleyVillaBrochure.pdf";
 import Property30 from "./assets/brochure/CRC_Maesta_Brochure.pdf";
+import Property31 from "./assets/brochure/FWBrochure.pdf";
 
 
 // Property 1
@@ -290,6 +294,15 @@ import Property30img3 from "./assets/properties/Property30/img3.png";
 import Property30img4 from "./assets/properties/Property30/img4.png";
 import Property30img5 from "./assets/properties/Property30/img5.png";
 import Property30img6 from "./assets/properties/Property30/img6.png";
+
+// Property 31
+import Property31img1 from "./assets/properties/Property31/img1.png";
+import Property31img2 from "./assets/properties/Property31/img2.png";
+import Property31img3 from "./assets/properties/Property31/img3.png";
+import Property31img4 from "./assets/properties/Property31/img4.png";
+import Property31img5 from "./assets/properties/Property31/img5.png";
+import Property31img6 from "./assets/properties/Property31/img6.png";
+import Property31img7 from "./assets/properties/Property31/img7.png";
 
 const propertyData = [
   {
@@ -2203,7 +2216,7 @@ const propertyData = [
     config: "3/3.5 BHK",
     possesions: "May, 2029",
     type: "Apartment",
-    img: Property30img1,
+    img: crcimg,
     mapLink:"https://maps.app.goo.gl/UUkHqjSAEYRqwi3e7",
     link: "https://wa.link/sn4vxi",
     details: [
@@ -2213,6 +2226,7 @@ const propertyData = [
     ],
     brochure: Property30,
     images: [
+      Property30img1,
       Property30img2,
       Property30img3,
       Property30img4,
@@ -2256,6 +2270,68 @@ const propertyData = [
         name: "Ace City Square",
         distance: "",
         time: "",
+      },
+    ],
+  },
+  {
+    id: 31,
+    title: "Future Estate",
+    location: "Sector 1, Greater Noida West",
+    area: "1110-1500 sq.ft",
+    price: "₹ 7.2k/sq.ft",
+    config: "2/3 BHK",
+    possesions: "End of 2025",
+    type: "Apartment",
+    img: futureestate,
+    mapLink:"",
+    link: "https://wa.link/4lleet",
+    details: [
+      "Designer main entrance door",
+      "Vitrified tiles in drawing, dining and bedrooms",
+      "External doors and windows made of aluminium/UPVC, internal hardwood frames with flush doors",
+      "Kitchen with granite Platform, single'double bowl stainless steel sink and ceramic glazed tiles upto 2 feet height above platform",
+      "Toilet with ceramic tiles upto 7 feet height",
+      "Inside wall finish with Plastic Paints in soothing shades"
+    ],
+    brochure: Property31,
+    images: [
+      Property31img2,
+      Property31img3,
+      Property31img4,
+      Property31img5,
+      Property31img6,
+      Property31img7,
+    ],
+    fullLocation:
+      "Plot No. GH16E, Sector-01, Greater Noida West, UP, Near Gaur mulbury mansion",
+    locality: [
+      {
+        id: 1,
+        type: "Expressway",
+        name: "FNG Expressway",
+        distance: "",
+        time: "10 mins",
+      },
+      {
+        id: 2,
+        type: "Hospital",
+        name: "Yatharth Hospital",
+        distance: "",
+        time: "5 mins",
+      },
+      {
+        id: 3,
+        type: "Metro Station",
+        name: "Sector 76 Metro Station",
+        distance: "",
+        time: "15 mins",
+      },
+      {
+        id: 4,
+        type: "Mall",
+        name: "Gaur City Mall",
+        distance: "",
+        time: "8 mins",
       },
     ],
   },
