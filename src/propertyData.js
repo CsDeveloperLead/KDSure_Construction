@@ -2283,7 +2283,7 @@ const propertyData = [
     possesions: "End of 2025",
     type: "Apartment",
     img: futureestate,
-    mapLink:"",
+    mapLink:"https://maps.app.goo.gl/kHe7F8BA1GWWYxTS8?g_st=iw",
     link: "https://wa.link/4lleet",
     details: [
       "Designer main entrance door",
