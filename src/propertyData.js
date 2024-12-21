@@ -66,6 +66,8 @@ import Property26 from "./assets/brochure/NBCCAspireO2ValleyBrochure.pdf";
 import Property27 from "./assets/brochure/AmrapaliParkLowRiseBrochure.pdf";
 import Property28 from "./assets/brochure/TerraceHomesBrochure.pdf";
 import Property29 from "./assets/brochure/AmrapaliDreamValleyVillaBrochure.pdf";
+import Property30 from "./assets/brochure/CRC_Maesta_Brochure.pdf";
+
 
 // Property 1
 import Property1img1 from "./assets/properties/Property1/img1.png";
@@ -280,6 +282,14 @@ import Property29img3 from "./assets/properties/Property29/img3.png";
 import Property29img4 from "./assets/properties/Property29/img4.png";
 import Property29img5 from "./assets/properties/Property29/img5.png";
 import Property29img6 from "./assets/properties/Property29/img6.png";
+
+// Property 30
+import Property30img1 from "./assets/properties/Property30/img1.png";
+import Property30img2 from "./assets/properties/Property30/img2.png";
+import Property30img3 from "./assets/properties/Property30/img3.png";
+import Property30img4 from "./assets/properties/Property30/img4.png";
+import Property30img5 from "./assets/properties/Property30/img5.png";
+import Property30img6 from "./assets/properties/Property30/img6.png";
 
 const propertyData = [
   {
@@ -2181,6 +2191,71 @@ const propertyData = [
         name: "Galaxy Blue Sapphire Plaza",
         distance: "2.7 Km",
         time: "6 min",
+      },
+    ],
+  },
+  {
+    id: 30,
+    title: "CRC MAESTA",
+    location: "Sector 1, Bisrakh Jalalpur, Greater Noida",
+    area: "1720-2295 sq.ft",
+    price: "₹ 13.36k/sq.ft",
+    config: "3/3.5 BHK",
+    possesions: "May, 2029",
+    type: "Apartment",
+    img: Property30img1,
+    mapLink:"https://maps.app.goo.gl/UUkHqjSAEYRqwi3e7",
+    link: "https://wa.link/sn4vxi",
+    details: [
+      "High Rise Story Building",
+      "Mivan construction",
+      "40000 Sq.ft Club",
+    ],
+    brochure: Property30,
+    images: [
+      Property30img2,
+      Property30img3,
+      Property30img4,
+      Property30img5,
+      Property30img6,
+    ],
+    fullLocation:
+      "Sector 1, Extension, Bisrakh Jalalpur, Noida, Greater Noida, Uttar Pradesh 201306",
+    locality: [
+      {
+        id: 1,
+        type: "School",
+        name: "PACIFIC WORLD SCHOOL",
+        distance: "3.3km",
+        time: "6 mins",
+      },
+      {
+        id: 2,
+        type: "Hospital",
+        name: "Yatharth Super Speciality Hospital Noida Extension",
+        distance: "1.1km",
+        time: "2 mins",
+      },
+      {
+        id: 3,
+        type: "Railway Station",
+        name: "Noida Sector 81 Metro Station",
+        distance: "7.1km",
+        time: "12 mins",
+      },
+      {
+        id: 4,
+        type: "Restaurant",
+        name: "Maa Vaishno Dhaba",
+        distance: "3.8km",
+        time: "7 mins",
+      },
+      {
+        id: 5,
+        type: "Mall",
+        name: "Ace City Square",
+        distance: "",
+        time: "",
       },
     ],
   },

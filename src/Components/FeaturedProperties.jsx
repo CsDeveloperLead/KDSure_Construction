@@ -22,7 +22,7 @@ const FeaturedProperties = () => {
       </div>
       <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10 place-items-center  md:gap-20">
-          {propertyData.slice(0, 29).map((property, index) => (
+          {propertyData.slice(0, 30).map((property, index) => (
             <Link
             to={
               property.link?.includes("https://teja-build-tech.vercel.app/properties")
