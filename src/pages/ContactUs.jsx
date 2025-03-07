@@ -61,7 +61,7 @@ const Contact = () => {
                   />
                 </svg>
               </span>
-              <span className="text-base lg:text-xl">  (+91) 9654987500 </span>
+              <span className="text-base lg:text-xl">  (+91) 9540066755</span>
             </div>
             <div className="flex gap-4 items-center text-white font-bold">
               <span>

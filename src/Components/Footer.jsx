@@ -134,7 +134,7 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  (+91) 9654987500
+                  (+91) 9540066755
                 </p>
                 <p className="text-sm md:text-base flex items-start gap-2">
                   <span>
