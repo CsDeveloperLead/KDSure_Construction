@@ -99,7 +99,7 @@ const HeroSection = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible2(true);
-          observer2.disconnect(); // Stop observing once animation starts
+          observer2.disconnect();
         }
       },
       { threshold: 0.5 }
