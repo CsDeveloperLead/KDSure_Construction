@@ -13,15 +13,16 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_efr75bc', // replace with your EmailJS service ID
-        'template_8ax1t2y', // replace with your EmailJS template ID
+        'service_8x05wmp', // replace with your EmailJS service ID
+        'template_6cibzug', // replace with your EmailJS template ID
         form.current,
-        'zjsxgaBlAE1A72O8D' // replace with your EmailJS user ID
+        'L4i4aP69g3yzb_oE_' // replace with your EmailJS user ID
       )
       .then(
         (result) => {
           console.log(result.text);
           alert('Message sent successfully!');
+          form.current.reset(); 
         },
         (error) => {
           console.log(error.text);
